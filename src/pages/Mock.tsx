@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { byId, examById, examLabel, exams, visibleQuestions } from '../data/bank';
 import { SessionBar } from '../components/SessionBar';
+import { BookmarkButton } from './Practice';
 import { Feedback, QuestionView } from '../components/QuestionView';
 import { Button, Card, ProgressBar, cx, pct, Glyph, LINK } from '../components/ui';
 import {
@@ -161,6 +162,7 @@ function useNow(intervalMs = 1000) {
 }
 
 function Runner({ mock }: { mock: ActiveMock }) {
+  const { bookmarks } = useAppState();
   const now = useNow();
   const remaining = mock.startedAt + mock.timeLimitMs - now;
   const [confirming, setConfirming] = useState(false);
@@ -247,6 +249,8 @@ function Runner({ mock }: { mock: ActiveMock }) {
       go(mock.current - 1);
     } else if (e.key.toLowerCase() === 'f') {
       toggleFlag();
+    } else if (e.key.toLowerCase() === 's') {
+      store.toggleBookmark(cur.qid);
     }
   });
 
@@ -311,6 +315,8 @@ function Runner({ mock }: { mock: ActiveMock }) {
               <span className="font-bold">
                 Question {mock.current + 1} <span className="font-normal text-slate-500">of {mock.answers.length}</span>
               </span>
+              <span className="flex items-center gap-1">
+              <BookmarkButton on={bookmarks.includes(q.id)} onClick={() => store.toggleBookmark(q.id)} />
               <button
                 type="button"
                 onClick={toggleFlag}
@@ -329,6 +335,7 @@ function Runner({ mock }: { mock: ActiveMock }) {
                   {cur.flagged ? 'Flagged' : 'Flag'}
                 </span>
               </button>
+              </span>
             </div>
           }
         />
@@ -340,7 +347,7 @@ function Runner({ mock }: { mock: ActiveMock }) {
             All questions
           </Button>
           <span className="hidden text-xs text-slate-500 sm:inline">
-            <kbd>A</kbd>–<kbd>D</kbd> answer · <kbd>←</kbd> <kbd>→</kbd> move · <kbd>F</kbd> flag
+            <kbd>A</kbd>–<kbd>D</kbd> answer · <kbd>←</kbd> <kbd>→</kbd> move · <kbd>F</kbd> flag · <kbd>S</kbd> save
           </span>
           <Button
             variant="secondary"

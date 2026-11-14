@@ -101,6 +101,22 @@ try {
     if (s.mocks.length !== 1 || s.activeMock) throw new Error('mock not saved');
   });
 
+  await step('review: saved questions and missed questions are listed', async () => {
+    const wrong = (await state()).attempts.filter((a) => a.correct === false).length;
+    await page.goto(base + '#/review');
+    await page.waitForSelector('h1:has-text("Review")');
+    if ((await state()).bookmarks.length && !(await page.locator('main li button[aria-expanded]').count()))
+      throw new Error('saved question not listed');
+    await page.click('role=tab[name=/All missed/]').catch(() => {});
+    const items = await page.locator('main li button[aria-expanded]').count();
+    if (wrong && !items) throw new Error(`${wrong} wrong attempts but nothing listed`);
+    if (items) {
+      await page.locator('main li button[aria-expanded]').first().click();
+      await page.waitForSelector('text=Answer:');
+    }
+    await page.screenshot({ path: path.join(shots, 'review.png'), fullPage: true });
+  });
+
   await step('dashboard renders heatmap, drill-down and trend', async () => {
     await page.goto(base + '#/dashboard');
     await page.waitForSelector('text=Weakness heatmap');
