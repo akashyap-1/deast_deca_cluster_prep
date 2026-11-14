@@ -3,7 +3,7 @@ import type { ExamInfo, ExamLevel, Letter, Question } from '../../src/lib/types.
 import { LETTERS } from '../../src/lib/types.ts';
 import type { ParsedExam, RawQuestion } from './parser.ts';
 import { joinLines, layoutTable } from './parser.ts';
-import type { Page } from './types.ts';
+import type { Page, Segment } from './types.ts';
 
 export interface ExamMeta {
   id: string;
@@ -59,12 +59,19 @@ export function stemText(r: RawQuestion): string {
     .map((b) =>
       b.kind === 'text'
         ? joinLines(b.lines)
-        : layoutTable(b.rows)
+        : isList(b.rows)
+          ? b.rows.map((row) => row[0].text).join('\n')
+          : layoutTable(b.rows)
             .map((row) => '| ' + row.join(' | ') + ' |')
             .join('\n'),
     )
     .filter(Boolean)
     .join('\n');
+}
+
+/** An indented block of single-run lines (e.g. "Car value = $6,000") is a list, not a table. */
+function isList(rows: Segment[][]): boolean {
+  return rows.every((row) => row.length === 1);
 }
 
 export interface BuildResult {
@@ -99,7 +106,7 @@ export function buildExamQuestions(
         notes.push(`option ${L} may contain another option marker: "${options[L]}"`);
     }
     for (const b of r.stem) {
-      if (b.kind !== 'table') continue;
+      if (b.kind !== 'table' || isList(b.rows)) continue;
       const cols = Math.max(...b.rows.map((row) => row.length));
       if (cols < 3) notes.push(`stem has a table whose columns could not be recovered (${b.rows.length} rows, ${cols} columns)`);
       else notes.push(`stem contains a ${b.rows.length}-row table (check it renders correctly)`);
@@ -137,7 +144,7 @@ export function buildExamQuestions(
         notes.push(`info: rationale does not start with the correct option's text (source wording differs)`);
       }
     }
-    const prefix = piCode.split(':')[0];
+    const prefix = piAreaKey(piCode);
     const instructionalArea = areas[prefix] ?? 'Unknown';
     if (piCode && !areas[prefix]) notes.push(`unknown PI prefix ${prefix}`);
     const hard = notes.filter((n) => !n.startsWith('stem contains a') && !n.startsWith('info:'));
@@ -161,6 +168,11 @@ export function buildExamQuestions(
   const nums = new Set(parsed.questions.map((q) => q.number));
   for (const k of parsed.keys) if (!nums.has(k.number)) problems.push(`key entry ${k.number} has no question`);
   return { questions, problems, rationaleMismatches };
+}
+
+/** "FI:071" -> "FI"; a PFL standard such as "Managing Credit Grade 8" -> "Managing Credit". */
+export function piAreaKey(piCode: string): string {
+  return piCode.includes(':') ? piCode.split(':')[0] : piCode.replace(/ Grade \d+$/, '');
 }
 
 export function dedupeKey(q: Question): string {

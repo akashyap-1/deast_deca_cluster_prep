@@ -5,3 +5,11 @@ dist
 *.tsbuildinfo
 scratch/*
 !scratch/raw
+
+# local tool state
+.claude/
+.cursor/
+.codex/
+.impeccable/review/
+.impeccable/questions/
+.impeccable/hook.cache.json

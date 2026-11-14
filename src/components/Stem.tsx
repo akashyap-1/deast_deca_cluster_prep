@@ -16,7 +16,7 @@ export function parseStem(text: string): ({ kind: 'text'; text: string } | { kin
 
 export function Stem({ text }: { text: string }) {
   return (
-    <div className="space-y-3 text-base leading-relaxed sm:text-lg">
+    <div className="space-y-3 text-[1.075rem] leading-relaxed font-medium sm:text-xl sm:leading-relaxed">
       {parseStem(text).map((b, i) =>
         b.kind === 'text' ? (
           <p key={i}>{b.text}</p>

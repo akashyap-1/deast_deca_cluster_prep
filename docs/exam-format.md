@@ -1,7 +1,7 @@
 # DECA Finance Cluster Exam PDF format
 
 Findings from inspecting the text of every PDF in `exams/`. Positioned text dumps are in
-`scratch/raw/*.txt` (regenerate with `npm run extract-raw`). Each dump line looks like
+`scratch/raw/<cluster>/*.txt` (regenerate with `npm run extract-raw`). Each dump line looks like
 `[ 99] A. awarding damages  ||  [324] C. providing notice`: the bracketed number is the x
 position in PDF points (page width 612) and `||` marks a big horizontal gap between two
 text runs on the same baseline.

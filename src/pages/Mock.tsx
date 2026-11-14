@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { byId, examById, exams, visibleQuestions } from '../data/bank';
+import { byId, examById, examLabel, exams, visibleQuestions } from '../data/bank';
+import { SessionBar } from '../components/SessionBar';
 import { Feedback, QuestionView } from '../components/QuestionView';
-import { Button, Card, ProgressBar, cx, pct } from '../components/ui';
+import { Button, Card, ProgressBar, cx, pct, Glyph, LINK } from '../components/ui';
 import {
   areaDistribution,
   buildMix,
@@ -72,7 +73,7 @@ function Setup() {
           100 questions, 60 minutes, no feedback until you submit, just like the real test.
         </p>
       </div>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid items-start gap-4 sm:grid-cols-2">
         <Card>
           <h2 className="font-bold">Replay a real exam</h2>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">Questions in their original order.</p>
@@ -84,7 +85,7 @@ function Setup() {
             {replayable.map((e) => (
               <option key={e.id} value={e.id}>
                 {e.label}
-                {takenIds.has(e.id) ? ' ✓' : ''}
+                {takenIds.has(e.id) ? ' (taken)' : ''}
               </option>
             ))}
           </select>
@@ -100,6 +101,7 @@ function Setup() {
           </p>
           <div className="mt-3 flex flex-wrap gap-1">
             {[...dist.entries()]
+              .filter(([, n]) => n > 0)
               .sort((a, b) => b[1] - a[1])
               .map(([a, n]) => (
                 <span key={a} className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-300">
@@ -251,7 +253,7 @@ function Runner({ mock }: { mock: ActiveMock }) {
   const low = remaining < 5 * 60 * 1000;
   return (
     <div className="space-y-4">
-      <div className="sticky top-14 z-10 -mx-4 border-b border-slate-200 bg-slate-50/95 px-4 py-2 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95">
+      <div className="sticky top-[52px] z-10 -mx-4 border-b border-slate-200 bg-slate-100/95 px-4 py-2 backdrop-blur-sm sm:-mx-6 sm:px-6 lg:top-0 lg:-mx-10 lg:px-10 dark:border-slate-800 dark:bg-slate-950/95">
         <div className="flex items-center justify-between gap-3">
           <div className="min-w-0">
             <div className="truncate text-sm font-semibold">{mock.label}</div>
@@ -260,15 +262,11 @@ function Runner({ mock }: { mock: ActiveMock }) {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <span
-              className={cx(
-                'rounded-lg px-2.5 py-1 font-mono text-lg font-bold tabular-nums',
-                low ? 'bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300' : 'bg-white dark:bg-slate-900',
-              )}
-              aria-label="Time remaining"
-            >
-              {formatDuration(remaining)}
-            </span>
+            {low && (
+              <span className="tnum rounded-lg bg-rose-100 px-2.5 py-1 text-sm font-bold text-rose-700 dark:bg-rose-950 dark:text-rose-300" aria-label="Time remaining">
+                {formatDuration(remaining)} left
+              </span>
+            )}
             <Button onClick={() => setConfirming(true)}>Submit</Button>
           </div>
         </div>
@@ -324,14 +322,19 @@ function Runner({ mock }: { mock: ActiveMock }) {
                     : 'text-slate-500 ring-slate-300 hover:bg-slate-100 dark:ring-slate-600 dark:hover:bg-slate-800',
                 )}
               >
-                {cur.flagged ? '⚑ Flagged' : '⚐ Flag'}
+                <span className="flex items-center gap-1">
+                  <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill={cur.flagged ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 21V4h11l-1.5 4L16 12H5" />
+                  </svg>
+                  {cur.flagged ? 'Flagged' : 'Flag'}
+                </span>
               </button>
             </div>
           }
         />
         <div className="mt-5 flex items-center justify-between gap-2">
           <Button variant="secondary" onClick={() => go(mock.current - 1)} disabled={mock.current === 0}>
-            ← Prev
+            <Glyph name="prev" /> Prev
           </Button>
           <Button variant="ghost" onClick={() => setShowGrid((v) => !v)} className="sm:hidden">
             All questions
@@ -344,7 +347,7 @@ function Runner({ mock }: { mock: ActiveMock }) {
             onClick={() => go(mock.current + 1)}
             disabled={mock.current === mock.answers.length - 1}
           >
-            Next →
+            Next <Glyph name="next" />
           </Button>
         </div>
       </Card>
@@ -374,6 +377,12 @@ function Runner({ mock }: { mock: ActiveMock }) {
           ))}
         </div>
       </Card>
+      <SessionBar
+        startedAt={mock.startedAt}
+        timer={{ label: 'Time left', until: mock.startedAt + mock.timeLimitMs, urgentMs: 5 * 60 * 1000 }}
+        score={{ label: 'Answered', value: `${answered}/${mock.answers.length}${flagged ? ` · ${flagged} flagged` : ''}` }}
+        source={`${examLabel(q.exam)} #${q.number}`}
+      />
     </div>
   );
 }
@@ -404,8 +413,8 @@ function Results({ result }: { result: MockResult }) {
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <a href="#/mock" className="text-sm font-semibold text-brand-700 dark:text-brand-400">
-          ← Mock exams
+        <a href="#/mock" className={cx(LINK, 'inline-flex items-center gap-1 text-sm')}>
+          <Glyph name="prev" /> Mock exams
         </a>
       </div>
       <Card>
@@ -479,7 +488,7 @@ function Results({ result }: { result: MockResult }) {
                 revealed
                 header={
                   <div className="mb-2 text-xs font-semibold text-slate-500">
-                    Q{i + 1} {a.flagged && <span className="text-amber-600">⚑ flagged</span>}{' '}
+                    Q{i + 1} {a.flagged && <span className="inline-flex items-center gap-0.5 text-amber-600 dark:text-amber-400"><Glyph name="flag" className="h-3 w-3" /> flagged</span>}{' '}
                     <span className="font-normal">· {formatDuration(a.ms)} spent</span>
                   </div>
                 }

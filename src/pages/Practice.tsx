@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { exams, areas, examLabel, visibleQuestions } from '../data/bank';
 import { Feedback, QuestionView } from '../components/QuestionView';
-import { Button, Card, Toggle, cx } from '../components/ui';
+import { Button, Card, Glyph, LINK, Toggle, cx } from '../components/ui';
 import { activeFilterCount, filterPool, NO_FILTERS, pickRandom, type PracticeFilters } from '../lib/practice';
 import { answeredToday, questionStats, streakDays } from '../lib/stats';
 import { dueReviews, pickSmart, reviewQueueSize, type SmartPick } from '../lib/smart';
 import { ProgressBar } from '../components/ui';
+import { SessionBar } from '../components/SessionBar';
 import { store, useAppState } from '../lib/storage';
 import type { Letter, Question } from '../lib/types';
 import { keyToLetter, useKeys } from '../lib/useKeys';
@@ -45,6 +46,9 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
   const [why, setWhy] = useState<SmartPick | null>(null);
   const [selected, setSelected] = useState<Letter | null>(null);
   const shownAt = useRef(Date.now());
+  const [sessionStart] = useState(() => Date.now());
+  const [tally, setTally] = useState({ answered: 0, correct: 0 });
+  const [answeredAt, setAnsweredAt] = useState<number | null>(null);
 
   function next(m: Mode = mode) {
     let q: Question | null;
@@ -64,6 +68,7 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
     if (q) shown.current.add(q.id);
     setCurrent(q);
     setSelected(null);
+    setAnsweredAt(null);
     shownAt.current = Date.now();
   }
 
@@ -78,6 +83,8 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
   function answer(l: Letter) {
     if (!current || selected) return;
     setSelected(l);
+    setAnsweredAt(Date.now());
+    setTally((t) => ({ answered: t.answered + 1, correct: t.correct + (l === current.correct ? 1 : 0) }));
     store.recordAttempt({
       qid: current.id,
       choice: l,
@@ -108,8 +115,7 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
 
   return (
     <div className="space-y-4">
-      <DailyBar />
-      <Card className="!p-3 sm:!p-4">
+      <DailyBar>
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="inline-flex rounded-lg bg-slate-100 p-1 dark:bg-slate-800" role="tablist">
             {(['smart', 'custom'] as const).map((m) => (
@@ -122,7 +128,7 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
                   'rounded-md px-3 py-1.5 text-sm font-semibold transition',
                   mode === m
                     ? 'bg-white text-slate-900 shadow-sm dark:bg-slate-950 dark:text-white'
-                    : 'text-slate-500 hover:text-slate-800 dark:hover:text-slate-200',
+                    : 'text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200',
                 )}
               >
                 {m === 'smart' ? 'Smart' : 'Custom'}
@@ -139,17 +145,17 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
               </Button>
             </div>
           ) : (
-            <span className="text-xs text-slate-500 dark:text-slate-400">Reviews missed questions, then your weakest areas</span>
+            <span className="hidden text-xs text-slate-500 sm:inline dark:text-slate-400">Reviews missed questions, then your weakest areas</span>
           )}
         </div>
         {mode === 'custom' && showFilters && <FilterPanel filters={filters} setFilters={setFilters} />}
-      </Card>
+      </DailyBar>
 
       {!current ? (
         <Card>
           <p className="text-center text-slate-600 dark:text-slate-400">
             No questions match these filters.{' '}
-            <button className="font-semibold text-brand-600 underline" onClick={() => setFilters(NO_FILTERS)}>
+            <button className={LINK} onClick={() => setFilters(NO_FILTERS)}>
               Clear filters
             </button>
           </p>
@@ -193,15 +199,16 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
           />
           {selected && (
             <>
-              <Feedback question={current} selected={selected} />
-              <div className="mt-4 flex items-center justify-between gap-3">
-                <span className="hidden text-xs text-slate-500 sm:inline">
+              {/* On phones the session bar carries Next; this one is for larger screens. */}
+              <div className="mt-4 hidden items-center justify-between gap-3 sm:flex">
+                <span className="hidden text-xs text-slate-500 sm:inline dark:text-slate-400">
                   <kbd>Enter</kbd> next · <kbd>S</kbd> bookmark
                 </span>
                 <Button onClick={() => next()} className="w-full sm:w-auto">
-                  Next question →
+                  Next question <Glyph name="next" />
                 </Button>
               </div>
+              <Feedback question={current} selected={selected} />
             </>
           )}
           {!selected && (
@@ -211,6 +218,16 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
           )}
         </Card>
       )}
+      <SessionBar
+        startedAt={sessionStart}
+        timer={{ label: 'This question', from: shownAt.current, stoppedAt: answeredAt }}
+        score={{
+          label: 'Session accuracy',
+          value: tally.answered ? `${tally.correct}/${tally.answered} · ${Math.round((tally.correct / tally.answered) * 100)}%` : '—',
+        }}
+        source={current ? `${examLabel(current.exam)} #${current.number}` : undefined}
+        action={selected ? { label: 'Next question', onClick: () => next() } : null}
+      />
     </div>
   );
 }
@@ -227,7 +244,7 @@ function ReasonChip({ pick }: { pick: SmartPick }) {
 }
 
 /** Today's progress toward the daily goal, the streak, and reviews waiting. */
-export function DailyBar() {
+export function DailyBar({ children }: { children?: React.ReactNode }) {
   const state = useAppState();
   const goal = state.settings.dailyGoal;
   const today = answeredToday(state.attempts);
@@ -237,29 +254,28 @@ export function DailyBar() {
   const due = dueReviews(questions, stats, Date.now()).length;
   const queue = reviewQueueSize(questions, stats);
   return (
-    <Card className="!p-3 sm:!p-4">
-      <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-        <div className="min-w-40 flex-1">
-          <div className="mb-1 flex items-baseline justify-between text-sm">
-            <span className="font-semibold">Today</span>
-            <span className="tabular-nums text-slate-600 dark:text-slate-400">
-              {today} / {goal}
-              {today >= goal && <span className="ml-1 text-brand-600 dark:text-brand-400">✓ goal met</span>}
+    <Card className="!p-3 sm:!px-5 sm:!py-4">
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm">
+        <span className="font-semibold">Today</span>
+        <ProgressBar value={today} max={goal} className="min-w-24 flex-1" />
+        <span className="tnum text-slate-600 dark:text-slate-300">
+          <span className="font-semibold text-slate-900 dark:text-white">{today}</span> / {goal}
+          {today >= goal && (
+            <span className="ml-1.5 inline-flex items-center gap-0.5 text-emerald-700 dark:text-emerald-400">
+              <Glyph name="check" className="h-3.5 w-3.5" /> goal met
             </span>
-          </div>
-          <ProgressBar value={today} max={goal} />
-        </div>
-        <div className="flex gap-5 text-sm">
-          <div title="Days in a row you met your daily goal">
-            <span className="text-lg font-bold tabular-nums">{streak}</span>{' '}
-            <span className="text-slate-500 dark:text-slate-400">day streak</span>
-          </div>
-          <div title={`${queue} missed questions are in the review cycle`}>
-            <span className="text-lg font-bold tabular-nums">{due}</span>{' '}
-            <span className="text-slate-500 dark:text-slate-400">reviews due</span>
-          </div>
-        </div>
+          )}
+        </span>
+        <span className="flex basis-full gap-5 sm:basis-auto">
+          <span className="tnum text-slate-600 dark:text-slate-300" title="Days in a row you met your daily goal">
+            <span className="font-semibold text-slate-900 dark:text-white">{streak}</span> day streak
+          </span>
+          <span className="tnum text-slate-600 dark:text-slate-300" title={`${queue} missed questions are in the review cycle`}>
+            <span className="font-semibold text-slate-900 dark:text-white">{due}</span> reviews due
+          </span>
+        </span>
       </div>
+      {children && <div className="mt-3 border-t border-slate-200 pt-3 dark:border-slate-800">{children}</div>}
     </Card>
   );
 }
@@ -324,7 +340,9 @@ function FilterPanel({
         <FilterGroup title="Performance indicators">
           {filters.piCodes.map((p) => (
             <ChipToggle key={p} on onClick={() => toggle('piCodes', p)}>
-              {p} ✕
+              <span className="inline-flex items-center gap-1">
+                {p} <Glyph name="close" className="h-3 w-3" />
+              </span>
             </ChipToggle>
           ))}
         </FilterGroup>

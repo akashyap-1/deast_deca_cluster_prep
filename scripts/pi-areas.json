@@ -1,8 +1,9 @@
 {
-  "_comment": "PI code prefix -> instructional area. Built from the prefixes that appear in exams/ (see docs/exam-format.md). CC (Compliance) is a legacy 2011-2013 code whose PIs later moved into Business Law.",
+  "_comment": "PI code prefix -> instructional area (MBA Research/DECA names), shared by every cluster in exams/. CC (Compliance) is a legacy 2011-2013 code whose PIs later moved into Business Law. The six full-word keys at the end are the strands of the National Standards for Personal Financial Education, which the 2023+ Personal Financial Literacy exams cite instead of a PI code (e.g. 'SOURCE: Managing Credit Grade 8').",
   "areas": {
     "BL": "Business Law",
     "CC": "Business Law",
+    "CM": "Channel Management",
     "CO": "Communication Skills",
     "CR": "Customer Relations",
     "EC": "Economics",
@@ -11,11 +12,26 @@
     "FI": "Financial Analysis",
     "FM": "Financial-Information Management",
     "HR": "Human Resources Management",
+    "IM": "Marketing-Information Management",
+    "KM": "Knowledge Management",
     "MK": "Marketing",
+    "MP": "Market Planning",
     "NF": "Information Management",
     "OP": "Operations",
     "PD": "Professional Development",
+    "PI": "Pricing",
+    "PJ": "Project Management",
+    "PM": "Product/Service Management",
+    "PR": "Promotion",
+    "QM": "Quality Management",
     "RM": "Risk Management",
-    "SM": "Strategic Management"
+    "SE": "Selling",
+    "SM": "Strategic Management",
+    "Earning Income": "Earning Income",
+    "Spending": "Spending",
+    "Saving": "Saving",
+    "Investing": "Investing",
+    "Managing Credit": "Managing Credit",
+    "Managing Risk": "Managing Risk"
   }
 }

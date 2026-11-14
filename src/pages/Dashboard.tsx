@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { areas, visibleQuestions } from '../data/bank';
-import { Button, Card, Stat, cx, pct } from '../components/ui';
+import { Button, Card, Stat, cx, pct, LINK } from '../components/ui';
 import { navigate } from '../lib/router';
 import { groupStats, overall, questionStats, streakDays, weakestPis, type GroupStat } from '../lib/stats';
 import { useAppState, type MockResult } from '../lib/storage';
@@ -13,13 +13,18 @@ const TARGET = 0.7;
  * Diverging fill: red arm below the target, blue arm above, neutral gray at the target.
  * Poles/midpoint are CSS variables with separate light and dark values (see index.css).
  */
-function heatFill(acc: number | null): string {
+function heatFill(acc: number | null, attempts = Infinity): string {
   if (acc == null) return 'transparent';
   const d = acc - TARGET;
   const t = Math.min(1, Math.abs(d) / (d < 0 ? TARGET : 1 - TARGET));
+  // Few attempts = low confidence: stay near neutral so one lucky answer never paints full strength.
+  const confidence = Math.min(1, attempts / CONFIDENT_AT);
   const pole = d < 0 ? 'var(--heat-weak)' : 'var(--heat-strong)';
-  return `color-mix(in oklab, ${pole} ${Math.round(15 + t * 85)}%, var(--heat-mid))`;
+  return `color-mix(in oklab, ${pole} ${Math.round((15 + t * 85) * confidence)}%, var(--heat-mid))`;
 }
+
+/** Attempts needed before an area's color reaches full strength. */
+const CONFIDENT_AT = 10;
 
 export function DashboardPage() {
   const state = useAppState();
@@ -40,7 +45,11 @@ export function DashboardPage() {
     <div className="space-y-4">
       <h1 className="text-2xl font-bold">Dashboard</h1>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat label="Accuracy" value={pct(o.accuracy)} sub={o.answered ? `${o.correct} correct` : 'No answers yet'} />
+        <Stat
+          label="Accuracy"
+          value={pct(o.accuracy)}
+          sub={!o.answered ? 'No answers yet' : o.answered < CONFIDENT_AT ? `${o.correct} of ${o.answered} · early estimate` : `${o.correct} correct`}
+        />
         <Stat label="Answered" value={o.answered.toLocaleString()} sub="all modes" />
         <Stat label="Streak" value={`${streak} day${streak === 1 ? '' : 's'}`} sub={`goal ${state.settings.dailyGoal}/day`} />
         <Stat label="Unseen" value={unseen.toLocaleString()} sub={`of ${questions.length.toLocaleString()}`} />
@@ -90,7 +99,7 @@ function Heatmap({
               g.attempts ? 'border-transparent' : 'heat-empty border-slate-200 dark:border-slate-700',
               open === g.key && 'ring-2 ring-slate-900 dark:ring-white',
             )}
-            style={{ backgroundColor: heatFill(g.accuracy) }}
+            style={{ backgroundColor: heatFill(g.accuracy, g.attempts) }}
           >
             <div className="text-xs leading-tight font-semibold">{g.key}</div>
             <div className="mt-1 text-lg font-bold tabular-nums">{g.attempts ? pct(g.accuracy) : '—'}</div>
@@ -172,7 +181,7 @@ function PiDrill({
                 <td className="py-1.5 pr-2 text-right tabular-nums">{g.attempts}</td>
                 <td className="py-1.5 pr-2 text-right tabular-nums">
                   <span className="inline-flex items-center gap-1.5">
-                    <span className="h-2.5 w-2.5 rounded-sm" style={{ backgroundColor: heatFill(g.accuracy) }} />
+                    <span className="h-2.5 w-2.5 rounded-sm" style={{ backgroundColor: heatFill(g.accuracy, g.attempts) }} />
                     {pct(g.accuracy)}
                   </span>
                 </td>
@@ -258,7 +267,7 @@ function MockTrend({ mocks }: { mocks: MockResult[] }) {
       </div>
       {mocks.length === 0 ? (
         <p className="mt-2 text-sm text-slate-500">
-          No mock exams yet. <a className="font-semibold text-brand-700 underline dark:text-brand-400" href="#/mock">Take one</a> to see your trend.
+          No mock exams yet. <a className={LINK} href="#/mock">Take one</a> to see your trend.
         </p>
       ) : showTable ? (
         <table className="mt-3 w-full text-sm">

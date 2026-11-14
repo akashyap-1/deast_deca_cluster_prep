@@ -1,26 +1,24 @@
-export function LogoMark({ className = 'h-8 w-8' }: { className?: string }) {
+const src = `${import.meta.env.BASE_URL}cougar.png`;
+
+export function LogoMark({ className = 'h-9 w-auto' }: { className?: string }) {
+  return <img src={src} alt="" aria-hidden="true" className={className} width={600} height={473} />;
+}
+
+export function Logo({ className }: { className?: string }) {
   return (
-    <svg viewBox="0 0 32 32" className={className} aria-hidden="true">
-      <rect width="32" height="32" rx="8" className="fill-brand-600" />
-      <path
-        d="M7 22.5l6-6.5 4.5 3.5L25 10M19.5 10H25v5.5"
-        fill="none"
-        stroke="#fff"
-        strokeWidth="2.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+    <span className={`flex items-center gap-2.5 ${className ?? ''}`}>
+      <LogoMark />
+      <span className="text-[1.05rem] leading-tight font-bold tracking-tight text-white">East DECA Prep</span>
+    </span>
   );
 }
 
-export function Logo() {
+export function Credit({ className }: { className?: string }) {
   return (
-    <span className="flex items-center gap-2">
-      <LogoMark />
-      <span className="text-lg font-extrabold tracking-tight">
-        kash<span className="text-brand-600 dark:text-brand-400">2</span>finance
-      </span>
-    </span>
+    <p className={className}>
+      by Advik Kashyap
+      <br />
+      Made for Downingtown East DECA
+    </p>
   );
 }

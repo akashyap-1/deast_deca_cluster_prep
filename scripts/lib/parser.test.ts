@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { groupLines, fixOrdinals, type Item } from './pdf-lines.ts';
-import { isBoilerplate, joinLines, layoutTable, parsePages } from './parser.ts';
-import { buildExamQuestions, dedupe, detectMeta, fillPiDescriptions, normalize } from './build.ts';
+import { isBoilerplate, joinLines, layoutTable, parsePages, reattachMarkers } from './parser.ts';
+import { buildExamQuestions, dedupe, detectMeta, fillPiDescriptions, normalize, piAreaKey } from './build.ts';
 import type { Line, Page } from './types.ts';
 
 // ---- helpers to build synthetic pages -------------------------------------------------
@@ -41,6 +41,26 @@ describe('isBoilerplate', () => {
     '®',
   ])('drops "%s"', (t) => {
     expect(isBoilerplate({ y: 500, segments: [{ x: 60, text: t }] }, p)).toBe(true);
+  });
+  it.each([
+    'Test 1330 BUSINESS MANAGEMENT AND ADMINISTRATION EXAM—KEY 4',
+    'Test 1164 BUSINESS MANAGEMENT AND ADMINISTRATION CLUSTER EXAM 12',
+    '2026 HS ICDC HOSPITALITY & TOURISM CLUSTER EXAM 2',
+    'Test 1303 HOSPITALITY AND TOURISM CLUSTER EXAM—KEY 9',
+    'Test 1329 MARKETING EXAM 1',
+    '2026 HS ICDC MARKETING CLUSTER EXAM—KEY 22',
+    'Test 1188 ENTREPRENEURSHIP AND SMALL BUSINESS MANAGEMENT EXAM 3',
+    'Test 1333 ENTREPRENEURSHIP EXAM—KEY 7',
+    'Test 1321 BUSINESS ADMINISTRATION CORE EXAM 5',
+    'Test 1231 PERSONAL FINANCIAL LITERACY—KEY 3',
+    'Test 1210 PERSONAL FINANCIAL LITERACY 8',
+    '2026 HS ICDC PERSONAL FINANCIAL LITERACY EXAM 1',
+  ])('drops other clusters\' header "%s"', (t) => {
+    expect(isBoilerplate({ y: 500, segments: [{ x: 60, text: t }] }, p)).toBe(true);
+  });
+  it('keeps a bare or lower-case cluster name (could be content)', () => {
+    for (const t of ['MARKETING', 'ENTREPRENEURSHIP', 'Marketing exam', 'Personal financial literacy'])
+      expect(isBoilerplate({ y: 500, segments: [{ x: 60, text: t }] }, p), t).toBe(false);
   });
   it('drops lone page numbers only in the margins', () => {
     expect(isBoilerplate({ y: 40, segments: [{ x: 298, text: '7' }] }, p)).toBe(true);
@@ -83,6 +103,28 @@ describe('groupLines', () => {
   it('merges a lone question-number marker with its text', () => {
     const lines = groupLines([it_(66, 600, '1.', 8), it_(81, 600, 'A basic principle')]);
     expect(lines[0].segments).toEqual([{ x: 66, text: '1. A basic principle' }]);
+  });
+});
+
+describe('reattachMarkers', () => {
+  it('moves a right-column marker glued to the left run back to the right run', () => {
+    const segs = [
+      { x: 99, text: 'B. purchasing corporate and government bonds. D.' },
+      { x: 342, text: 'selecting his/her own investment options.' },
+    ];
+    reattachMarkers(segs, 275);
+    expect(segs.map((s) => s.text)).toEqual([
+      'B. purchasing corporate and government bonds.',
+      'D. selecting his/her own investment options.',
+    ]);
+  });
+  it('leaves ordinary two-column rows alone', () => {
+    const segs = [
+      { x: 99, text: 'B. Plan D.' },
+      { x: 324, text: 'D. Four' },
+    ];
+    reattachMarkers(segs, 275);
+    expect(segs.map((s) => s.text)).toEqual(['B. Plan D.', 'D. Four']);
   });
 });
 
@@ -188,6 +230,69 @@ describe('parsePages', () => {
     );
     expect(k3.piCode).toBe('FI:275');
     expect(k3.piDescriptionLines).toEqual([]);
+  });
+});
+
+describe('parsePages: other layouts', () => {
+  // 2023+ layout with question numbers at x=38 and stem continuation/options at x=61
+  // (23pt indent), a page whose whole text block drifts 6pt right, an indented one-column
+  // list in the stem, and a PFL key that cites a National Standard instead of a PI code.
+  function exam(): Page[] {
+    return [
+      page(1, [
+        L([40, 'Test 1334'], [195, 'PERSONAL FINANCIAL LITERACY EXAM'], [548, '1']),
+        L([38, '1. Lara tracks the movement of money to understand the company’s liquidity. Lara is']),
+        L([61, 'analyzing the company’s']),
+        L([61, 'A. income statement.']),
+        L([61, 'B. cash flow statement.']),
+        L([61, 'C. balance sheet.']),
+        L([61, 'D. earnings statement.']),
+      ]),
+      page(2, [
+        L([40, 'Test 1334'], [195, 'PERSONAL FINANCIAL LITERACY EXAM'], [548, '2']),
+        L([44, '2. Using the following information, determine Megan’s net worth.']),
+        L([189, 'Car value = $6,000']),
+        L([189, 'Credit card debt = $500']),
+        L([67, 'A. $5,500']),
+        L([67, 'B. $6,500']),
+        L([67, 'C. $500']),
+        L([67, 'D. $6,000']),
+      ]),
+      page(3, [
+        L([40, 'Test 1334'], [195, 'PERSONAL FINANCIAL LITERACY EXAM—KEY'], [548, '1']),
+        L([38, '1. B']),
+        L([61, 'Cash flow statement. It tracks the movement of money.']),
+        L([61, 'SOURCE: Managing Credit Grade 8']),
+        L([61, 'SOURCE: LAP-FI-002—Give Credit Where Credit Is Due']),
+        L([38, '2. A']),
+        L([61, '$5,500. Assets minus liabilities.']),
+        L([61, 'SOURCE: FI:562']),
+        L([61, 'SOURCE: RM']),
+        L([61, 'SOURCE: Schwab MoneyWise. (2017). Your personal net worth.']),
+      ]),
+    ];
+  }
+  const parsed = parsePages(exam(), 2);
+  const built = buildExamQuestions(parsed, meta, { ...areas, 'Managing Credit': 'Managing Credit' });
+  it('parses every question despite the page drift', () => {
+    expect(parsed.problems).toEqual([]);
+    expect(built.questions.map((q) => q.needsReview)).toEqual([false, false]);
+    expect(built.questions[1].options).toEqual({ A: '$5,500', B: '$6,500', C: '$500', D: '$6,000' });
+  });
+  it('joins a 23pt-indented stem continuation into the paragraph', () => {
+    expect(built.questions[0].question).toBe(
+      'Lara tracks the movement of money to understand the company’s liquidity. Lara is analyzing the company’s',
+    );
+  });
+  it('keeps an indented one-column list as plain lines, not a table', () => {
+    expect(built.questions[1].question).toBe(
+      'Using the following information, determine Megan’s net worth.\nCar value = $6,000\nCredit card debt = $500',
+    );
+  });
+  it('uses a National Standard strand as the PI code and drops bare standard codes', () => {
+    expect(built.questions[0]).toMatchObject({ piCode: 'Managing Credit Grade 8', instructionalArea: 'Managing Credit' });
+    expect(built.questions[1].reference).toBe('Schwab MoneyWise. (2017). Your personal net worth.');
+    expect(piAreaKey('FI:562')).toBe('FI');
   });
 });
 

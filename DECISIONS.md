@@ -2,9 +2,7 @@
 
 Judgment calls made while building without the owner available.
 
-1. **No git remote configured.** The repo had no `origin`, so pushes are impossible from this
-   environment. All work is committed locally on branch `claude/kash2finance`. To publish:
-   `git remote add origin <url> && git push -u origin claude/kash2finance`.
+1. **Git remote.** `origin` is now `https://github.com/akashyap-1/deast_deca_cluster_prep.git`.
 2. **Work on a branch, not `main`.** Commits go to `claude/kash2finance` so `main` stays as the
    owner left it. Merge with `git checkout main && git merge claude/kash2finance`.
 3. **PDFs moved into `exams/`.** The PDFs were committed at the repo root and deleted in the
@@ -65,3 +63,58 @@ Judgment calls made while building without the owner available.
 26. **Mocks can be abandoned** (from the Submit panel). Nothing is saved from an abandoned mock.
 27. **`npm run smoke`** is an end-to-end check using Playwright. It is a dev dependency only and is not
     part of `npm test`, so the unit tests stay fast and need no browser.
+28. **One question bank per cluster.** `exams/<cluster>/*.pdf` -> `data/clusters/<cluster>.json` and
+    `docs/parse-reports/<cluster>.md`. Deduplication and exam ids are per cluster, so the same id (e.g.
+    `2026-icdc-1341`) or the same question can appear in two clusters' files. `manifest.json` overrides are per folder.
+29. **Running headers are matched by an upper-case cluster name** (`CLUSTER_NAME` in `scripts/lib/parser.ts`)
+    plus a `Test NNNN` / `YYYY HS ICDC` / `SAMPLE` prefix, `EXAM` or `KEY`. A bare cluster name or a
+    lower-case one is kept as content.
+30. **Page drift is corrected.** The 2026 BA Core district PDF shifts its text block 1-2pt right on every page
+    (options at x=59, 61, 67, 68 …). The parser re-learns the shift from each question's `A.` marker. Without this,
+    18 questions were lost.
+31. **Stem indent threshold raised from 22pt to 30pt.** 2026 ICDC booklets put question numbers at x=38 and the
+    continuation at x=61 (23pt), which was misread as a table. No real table row in any exam sits in 23-30pt.
+    Indented blocks of one-run lines (e.g. `Car value = $6,000`) are now kept as plain lines instead of a
+    one-column table, and are not flagged.
+32. **A right-column `C.`/`D.` marker glued to the left run** (`B. … bonds. D.` || `selecting …`) is moved back onto
+    the right run (1 question, Hospitality 2021).
+33. **New PI prefixes** use the MBA Research instructional-area names: CM Channel Management, IM Marketing-Information
+    Management, KM Knowledge Management, MP Market Planning, PI Pricing, PJ Project Management, PM Product/Service
+    Management, PR Promotion, QM Quality Management, SE Selling. Each was checked against the PI descriptions
+    printed in the keys (e.g. `CM:001 Explain the nature and scope of channel management`).
+34. **2023+ PFL exams cite National Standards for Personal Financial Education, not PI codes**
+    (`SOURCE: Managing Credit Grade 8`). The strand + grade is stored as `piCode` (e.g. `"Managing Credit Grade 8"`)
+    and the strand is the instructional area (Earning Income, Spending, Saving, Investing, Managing Credit,
+    Managing Risk). Those questions have an empty `piDescription`, because none is printed. So the PFL bank mixes DECA areas
+    (2018-2022, 2026 State) with strand areas (2023-2026 samples, district and ICDC).
+35. **Bare Jump$tart codes in 2018-2022 PFL keys are dropped.** These keys have an extra `SOURCE: RM` / `SS` / `CD` /
+    `EI` / `FD` / `IN` line between the PI and the reference. It is not a reference, so it is not stored.
+36. **Exam levels follow the same rules as Finance.** Files named `…District Exam` become District even if the cover says
+    SAMPLE. The BA Core `24-25_BA Core Exam.pdf` has no "district" in its name, so it is `2025-sample-1308`.
+37. **Remaining flagged questions are real source problems and stay flagged:** BMA `2026-icdc-1341` Q27 (the rationale
+    restates option B but the key says D) and PFL `2018-district-1166` Q35 (a net-worth table whose columns could
+    not be recovered).
+
+## Accounts, sync and clusters (2026-11)
+
+38. **District-only sign-up is enforced in the database**, not just the form: a trigger on `auth.users` rejects
+    any email that isn't `@student.dasd.org` or `@dasd.org`, and every table's row level security policy also
+    requires a district email in the signed-in user's token. Email confirmation must stay on, or the domain
+    check proves nothing.
+39. **Progress is stored as rows, not one blob.** Attempts are append-only rows with client-generated ids, so two
+    devices used at the same time never overwrite each other's answers. Settings and the in-progress mock are
+    single rows where the last write wins.
+40. **Writes go through a persistent queue** (`src/lib/sync.ts`, kept in localStorage per user). A network failure
+    keeps the job and retries with backoff; a server refusal (a Postgres/PostgREST error code) skips the job so
+    one bad row can't block everything after it. Opening a cluster first tries to flush the queue, then loads
+    from the server, and falls back to this device's cached copy when offline.
+41. **Settings are per account; everything else is per account and cluster.** Reset and import only touch
+    the cluster you're in.
+42. **Question banks stay bundled** (per the owner's choice): the screens are locked behind sign-in, but the JSON
+    files are part of the public site build. Each cluster's bank is a separate chunk loaded when opened.
+43. **Old local-only progress migrates once.** If the browser still has `kash2finance:v1` progress and the account
+    has no Finance answers yet, it is uploaded on first sign-in.
+44. **Dark mode is the default** (owner's request). Light and system remain in Settings.
+45. **Heatmap confidence.** An area's color reaches full strength only after 10 attempts, so one lucky answer
+    doesn't read as a strong area. Dashboard accuracy under 10 answers is labelled an early estimate.
+

@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: process.env.GITHUB_PAGES ? '/DECA_Finance/' : '/',
+  base: process.env.GITHUB_PAGES ? '/deast_deca_cluster_prep/' : '/',
   build: { chunkSizeWarningLimit: 4000 },
 });

@@ -1,10 +1,20 @@
 import { useRef, useState } from 'react';
 import { allQuestions, bank } from '../data/bank';
+import { clusterById } from '../data/clusters';
 import { Button, Card, Toggle, cx } from '../components/ui';
+import { signOut } from '../lib/auth';
 import { store, useAppState, type Theme } from '../lib/storage';
+import { hasPendingChanges, useSession } from '../lib/sync';
+
+function plural(n: number, word: string) {
+  return `${n.toLocaleString()} ${word}${n === 1 ? '' : 's'}`;
+}
 
 export function SettingsPage() {
   const state = useAppState();
+  const session = useSession();
+  const email = session.status === 'ready' ? session.email : '';
+  const cluster = clusterById(session.status === 'ready' ? session.cluster : 'finance');
   const [goal, setGoal] = useState(String(state.settings.dailyGoal));
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
   const [confirmReset, setConfirmReset] = useState('');
@@ -22,7 +32,7 @@ export function SettingsPage() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `kash2finance-progress-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `east-deca-prep-${cluster.id}-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     setMsg({ ok: true, text: 'Progress exported.' });
@@ -35,7 +45,7 @@ export function SettingsPage() {
       store.importJSON(text);
       const s = store.get();
       setGoal(String(s.settings.dailyGoal));
-      setMsg({ ok: true, text: `Imported ${s.attempts.length} answers, ${s.mocks.length} mock exams, ${s.bookmarks.length} bookmarks.` });
+      setMsg({ ok: true, text: `Imported ${plural(s.attempts.length, 'answer')}, ${plural(s.mocks.length, 'mock exam')}, ${plural(s.bookmarks.length, 'bookmark')}.` });
     } catch (e) {
       setMsg({ ok: false, text: (e as Error).message });
     } finally {
@@ -45,7 +55,26 @@ export function SettingsPage() {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-2xl font-bold">Settings</h1>
+      <h1 className="text-2xl font-bold tracking-tight">Settings</h1>
+
+      <Card>
+        <h2 className="font-bold">Account</h2>
+        <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
+          <p className="text-sm text-slate-600 dark:text-slate-300">
+            Signed in as <span className="font-semibold text-slate-900 dark:text-white">{email}</span>. Your progress is saved to
+            your account, so you can sign in on any device.
+          </p>
+          <Button
+            variant="secondary"
+            onClick={() => {
+              if (hasPendingChanges() && !window.confirm('Some answers haven’t finished saving. Sign out anyway? They may be lost.')) return;
+              void signOut();
+            }}
+          >
+            Sign out
+          </Button>
+        </div>
+      </Card>
 
       <Card>
         <h2 className="mb-3 font-bold">Study</h2>
@@ -79,6 +108,20 @@ export function SettingsPage() {
             onChange={(v) => store.setSettings({ includeFlagged: v })}
           />
         </div>
+        <div className="mt-3 border-t border-slate-100 pt-3 dark:border-slate-800">
+          <Toggle
+            label={
+              <span>
+                Show timer
+                <span className="block text-xs text-slate-500">
+                  Time on each question in practice, time left in mock exams. The last 5 minutes of a mock always show.
+                </span>
+              </span>
+            }
+            checked={state.settings.showTimer}
+            onChange={(v) => store.setSettings({ showTimer: v })}
+          />
+        </div>
       </Card>
 
       <Card>
@@ -102,10 +145,10 @@ export function SettingsPage() {
       </Card>
 
       <Card>
-        <h2 className="font-bold">Your progress</h2>
+        <h2 className="font-bold">Your {cluster.name} progress</h2>
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-          Progress lives only in this browser: {state.attempts.length} answers, {state.mocks.length} mock exams,{' '}
-          {state.bookmarks.length} bookmarks. Export it to back it up or move it to another browser.
+          {plural(state.attempts.length, 'answer')}, {plural(state.mocks.length, 'mock exam')} and {plural(state.bookmarks.length, 'bookmark')}, saved to your
+          account. Export a copy as a file, or import one to replace this cluster’s progress.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <Button onClick={exportProgress}>Export progress</Button>
@@ -130,8 +173,8 @@ export function SettingsPage() {
       <Card className="border-rose-200 dark:border-rose-900">
         <h2 className="font-bold text-rose-700 dark:text-rose-400">Reset progress</h2>
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-          Deletes every answer, bookmark and mock exam from this browser. Settings are kept. This cannot be undone,
-          so export first if you might want it back.
+          Deletes every {cluster.name} answer, bookmark and mock exam from your account on every device. Other clusters
+          and your settings are kept. This cannot be undone, so export first if you might want it back.
         </p>
         <label className="mt-3 block text-sm">
           Type <span className="font-mono font-bold">RESET</span> to confirm
@@ -152,12 +195,12 @@ export function SettingsPage() {
             setMsg({ ok: true, text: 'Progress reset.' });
           }}
         >
-          Reset all progress
+          Reset {cluster.short} progress
         </Button>
       </Card>
 
       <p className="text-center text-xs text-slate-400">
-        kash2finance · {bank.questions.length.toLocaleString()} questions from {bank.exams.length} exam files · bank
+        {cluster.name} · {bank.questions.length.toLocaleString()} questions from {bank.exams.filter((e) => !e.duplicateOf).length} past exams · bank
         built {new Date(bank.generatedAt).toLocaleDateString()}
       </p>
     </div>

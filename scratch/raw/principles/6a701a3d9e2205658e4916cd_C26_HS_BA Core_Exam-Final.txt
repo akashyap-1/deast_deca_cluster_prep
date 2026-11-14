@@ -1,0 +1,1705 @@
+
+===== PAGE 1 (612x792) =====
+[420] Competency-Based
+[421] Competitive Events
+[431] *Written Exam*
+[424] Test Number 1345
+[413] Booklet Number _____
+[147] Business Administration
+[231] Core Exam
+[149] PBM - Principles of Business Management and Administration
+[149] PEN - Principles of Entrepreneurship
+[149] PFN - Principles of Finance
+[149] PHT - Principles of Hospitality and Tourism
+[149] PMK - Principles of Marketing
+[126] INSTRUCTIONS: This is a timed, comprehensive exam for the occupational area
+[146] identified above. Do not open this booklet until instructed to do so by the
+[157] testing monitor. You will have 90 minutes to complete all questions.
+[ 72] CAUTION: Posting these materials on a website is a copyright violation.
+[ 72] This comprehensive exam was developed by MBA Research exclusively for DECA’s 2025-2026
+[ 72] Competitive Events Program. Items have been randomly selected from the MBA Research Test-Item
+[ 72] Bank and represent a variety of instructional areas. Performance indicators for this exam are at the
+[ 72] prerequisite and career-sustaining levels. A descriptive key, including question sources and answer
+[ 72] rationales, has been provided to the DECA chartered association advisor.
+[158] Copyright © 2026 by Marketing & Business Administration Research and Curriculum
+[102] ®
+[ 72] Center , Columbus, Ohio (dba MBA Research). Each individual test item contained herein is the
+[ 72] exclusive property of MBA Research. Items are licensed to DECA only for use as configured within this
+[ 72] exam, in its entirety. Use of individual items for any purpose other than as specifically authorized is
+[ 72] prohibited. Possession of this exam, without written authorization, under any other circumstances
+[ 72] is a copyright violation. Posting to inter- or intranet sites is specifically forbidden unless written
+[ 72] permission is obtained prior to posting. Report violations to DECA at 703.860.5000 and MBA Research at
+[ 72] 800.448.0398. Permission for reprinting is granted to DECA chartered associations authorized by DECA
+[ 72] Inc.
+[ 72] DECA Inc. will impose sanctions on chapters and chartered associations for violations of this policy up to
+[ 72] and including disqualification of competitors and chapters from further participation.
+
+===== PAGE 2 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [548] 1
+[ 38] 1. A scientist places a marshmallow in front of a small child. The child can either eat the marshmallow immediately
+[ 61] or wait 15 minutes for a larger reward—two marshmallows. This experiment tests the child’s
+[ 61] A. ethics.
+[ 61] B. memory.
+[ 61] C. self-control.
+[ 61] D. language skills.
+[ 38] 2. Erika’s coworker asked her to assist with another project. Erika politely refused since it would take too much
+[ 61] time. Her coworker says, “It won’t be that bad! How about I just let my manager know you’re willing to help?”
+[ 61] How should Erika respond?
+[ 61] A. Agree to help, then do the bare minimum.
+[ 61] B. Raise her voice and say no.
+[ 61] C. Politely and firmly say no.
+[ 61] D. Say she’ll consider it, and they can talk later.
+[ 38] 3. As an industrial good, a microchip used in a computer processor would be classified as
+[ 61] A. material.
+[ 61] B. an installation.
+[ 61] C. a part.
+[ 61] D. equipment.
+[ 38] 4. Megan is developing a marketing campaign that emphasizes a product’s low price point. Midway through the
+[ 61] project, her supervisor decides to pivot the strategy to focus on the product’s durability and weather resistance
+[ 61] instead. Megan’s ability to smoothly transition her work and adapt to this new direction shows her creative
+[ 61] strength in
+[ 61] A. ambiguity.
+[ 61] B. passion.
+[ 61] C. flexibility.
+[ 61] D. independence.
+[ 38] 5. Rashad is part of a multidisciplinary team working on a product launch. He often slacks off or avoids work on
+[ 61] the project, and his tasks become a bottleneck for the team. As a result, they miss their deadline. The main
+[ 61] problem for the team is
+[ 61] A. the manager’s lack of control.
+[ 61] B. Rashad’s lack of commitment.
+[ 61] C. the inflexibility of the project deadline.
+[ 61] D. their over-reliance on Rashad.
+[ 38] 6. What step of the purchasing process involves developing the specifications, or requirements, for the goods or
+[ 61] services to be purchased?
+[ 61] A. Identifying needs
+[ 61] B. Evaluating supplier performance
+[ 61] C. Placing orders
+[ 61] D. Selecting suppliers
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 3 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [548] 2
+[ 38] 7. Thad wants to sell liquor from his restaurant, but he must first maintain government requirements and apply to
+[ 61] be a liquor seller. This is an example of
+[ 61] A. licensing.
+[ 61] B. price discrimination.
+[ 61] C. price controls.
+[ 61] D. zoning.
+[ 38] 8. Lumi, a fashion operations manager, must determine when fabric rolls arrive at the cutting tables and how long
+[ 61] they remain before moving to the sewing stations. Lumi is responsible for
+[ 61] A. expense control.
+[ 61] B. logistics.
+[ 61] C. scheduling.
+[ 61] D. routing.
+[ 38] 9. Suppose that new government regulations cause the price of fishing licenses to jump 120%. What effect is this
+[ 61] likely to have on the market for fishing rods and equipment?
+[ 61] A. Their demand will decrease.
+[ 61] B. They will be taxed at lower rates.
+[ 61] C. They will be taxed at higher rates.
+[ 61] D. Their demand will increase.
+[ 38] 10. In a spreadsheet, which feature should a user employ to automatically change the formatting of a cell based on
+[ 61] the specific value it contains?
+[ 61] A. Pivot tables
+[ 61] B. Goal seek
+[ 61] C. Data validation
+[ 61] D. Conditional formatting
+[ 38] 11. Vantage Point Analytics requires employees to change their passwords every 90 days and use two-factor
+[ 61] authentication for all system logins. Which aspect of information management is this policy designed to
+[ 61] address?
+[ 61] A. Information security
+[ 61] B. Data transparency
+[ 61] C. Data analysis
+[ 61] D. Information sharing
+[ 38] 12. Raleigh, a marketing manager at Fourfold Furniture, is responsible for conducting market research to determine
+[ 61] which new shelving units should be developed and whether the flat-pack boxes prevent scratches during
+[ 61] shipping. Raleigh is performing which marketing function?
+[ 61] A. Product/Service management
+[ 61] B. Pricing
+[ 61] C. Promotion
+[ 61] D. Channel management
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 4 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [548] 3
+[ 38] 13. Each month, Unbundle Logistics pays for its insurance premiums, property taxes, and the flat-rate rent on its
+[ 61] warehouse. These costs are __________ expenses.
+[ 61] A. fixed
+[ 61] B. variable
+[ 61] C. estimated
+[ 61] D. semi-variable
+[ 38] 14. Which of the following is the best example of a transferable skill gained through a school club that can
+[ 61] substitute for formal work experience:
+[ 61] A. Managing a budget and scheduling meetings for the Art Club
+[ 61] B. Contributing to discussions and attending screenings for the Cinema Club
+[ 61] C. Maintaining a high follower count on social media
+[ 61] D. Participating in weekly practices for a local esports or gaming team
+[ 38] 15. Bethany is reviewing sales figures to identify why a specific region underperformed last quarter. Which principle
+[ 61] of data analysis is most important for ensuring the conclusions drawn are actually useful for decision-making?
+[ 61] A. Volume
+[ 61] B. Integrity
+[ 61] C. Aesthetics
+[ 61] D. Exclusivity
+[ 38] 16. Implementing a new automated inventory system across a custom sneaker factory within nine months is an
+[ 61] example of a __________ goal.
+[ 61] A. long-term
+[ 61] B. learning
+[ 61] C. short-term
+[ 61] D. performance
+[ 38] 17. Letty and Ishmael are having a conversation at a networking event. Ishmael tells Letty about some of his work
+[ 61] projects. Letty holds eye contact, listens, and nods along as he speaks, but the conversation soon fizzles out.
+[ 61] How could Letty have shown better active listening skills and kept the conversation going?
+[ 61] A. Focusing on the speaker
+[ 61] B. Interrupting the speaker
+[ 61] C. Asking questions
+[ 61] D. Eliminating distractions
+[ 38] 18. Alfonso, a marketing manager, is deciding how best to use the company’s official LinkedIn account. Which of
+[ 61] the following actions would be most appropriate:
+[ 61] A. Sending a private message to a friend
+[ 61] B. Sharing his personal career journey
+[ 61] C. Changing the profile banner to his pet
+[ 61] D. Reposting an industry news article
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 5 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [548] 4
+[ 38] 19. Jane notices one of her coworkers consistently falls asleep at their desk. She wonders if the employee is
+[ 61] stressed since they are exhibiting
+[ 61] A. fatigue.
+[ 61] B. absenteeism.
+[ 61] C. low morale.
+[ 61] D. illness.
+[ 38] 20. During a business meeting, which of the following behaviors best demonstrates effective participation in a group
+[ 61] discussion:
+[ 61] A. Interrupting a colleague
+[ 61] B. Using technical jargon
+[ 61] C. Remaining silent during the meeting
+[ 61] D. Actively listening to others
+[ 38] 21. Assets with continually changing value, such as cash or inventory, are called __________ assets.
+[ 61] A. current
+[ 61] B. other
+[ 61] C. intangible
+[ 61] D. capital
+[ 38] 22. Peak Chic sells high-quality clothes for low prices. Cotton Core has slightly higher prices but provides personal
+[ 61] assistance, a clear return policy, and online shopping options. Which of the following is the most accurate
+[ 61] statement:
+[ 61] A. Cotton Core is likely to be successful because it practices customer experience management.
+[ 61] B. Peak Chic is likely to be successful because it practices customer relationship management.
+[ 61] C. Cotton Core is unlikely to be successful because it has higher prices.
+[ 61] D. Peak Chic is unlikely to be successful because customers do not care about quality.
+[ 38] 23. Luca is shopping for a used motorhome. Which of the following should he do:
+[ 61] A. Determine his walk-away point before negotiating
+[ 61] B. Accept the salesperson’s first offer
+[ 61] C. Avoid negotiations to ensure a lower price
+[ 61] D. Go into negotiations without any preparation
+[ 38] 24. Serena had audience members fill out surveys following her presentation. Some respondents said they were
+[ 61] quickly hooked and enjoyed the included graphs, but were confused about the main point of the presentation.
+[ 61] What characteristic of effective presentations does Serena need to improve on?
+[ 61] A. Presenting a clear message
+[ 61] B. Using impactful nonverbal communication
+[ 61] C. Having a great beginning and ending
+[ 61] D. Incorporating visual aids
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 6 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [548] 5
+[ 38] 25. Bellamy, a financial advisor, enters their client’s risk tolerance, income, and retirement expectations into a
+[ 61] computer program designed to identify specific investment strategies. Bellamy is using a(n)
+[ 61] A. expert system.
+[ 61] B. computer-aided design.
+[ 61] C. Voice over Internet Protocol.
+[ 61] D. Global Positioning System.
+[ 38] 26. Heart Tokyo is a fashionable clothing retailer that tries to appeal to a young, trendy audience. Its employees are
+[ 61] required to wear stylish clothes, keep up with pop culture, and serve customers in a laid-back but professional
+[ 61] manner. Which of the following touchpoints would be most consistent with Heart Tokyo’s brand promise:
+[ 61] A. Primetime TV and radio commercials
+[ 61] B. Word-of-mouth promotion and email marketing
+[ 61] C. Printed flyers and ads in the local newspaper
+[ 61] D. Short-form videos and promotions on social media
+[ 38] 27. Nala manages a small team of software developers. Two members approach her with a disagreement about
+[ 61] how a feature should be implemented. Both ideas sound reasonable, but Nala would need to do some more
+[ 61] research to determine which is better. What should she do?
+[ 61] A. Tell them both ideas make sense and they should just agree on one.
+[ 61] B. Tell them she will reflect on the issue and share her decision later.
+[ 61] C. Go with her gut and choose whichever implementation feels right.
+[ 61] D. Reject both ideas until she can come up with another idea they agree with.
+[ 38] 28. General Mills operates in the hypercompetitive market of breakfast cereals and needs to prioritize both product
+[ 61] availability and order fulfillment. Which supply chain model is best suited for the company?
+[ 61] A. Continuous flow
+[ 61] B. Flexible
+[ 61] C. Efficient
+[ 61] D. Fast
+[ 38] 29. What is the first step an employee should take immediately after an accident occurs in the workplace, given
+[ 61] they are not seriously injured?
+[ 61] A. File an insurance claim.
+[ 61] B. Notify a supervisor.
+[ 61] C. Clean up the area.
+[ 61] D. Scream for help.
+[ 38] 30. Investors analyze NimbusCore’s income statement and discover it has experienced consistent yearly profit
+[ 61] growth. This positive trend in profitability suggests NimbusCore’s financial performance has been
+[ 61] A. average.
+[ 61] B. modeled.
+[ 61] C. inconsistent.
+[ 61] D. successful.
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 7 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [548] 6
+[ 38] 31. Rekha is purchasing a milling machine for her company to start manufacturing custom parts. However, she is
+[ 61] worried about buying a machine that does not work as advertised, resulting in a loss. How should Rekha
+[ 61] mitigate this risk?
+[ 61] A. Avoid the risk by not buying a machine.
+[ 61] B. Prevent the risk by buying the cheapest option.
+[ 61] C. Buy a machine with a good warranty.
+[ 61] D. Control the risk by restricting use of the machine.
+[ 38] 32. Dominic has just finished a job interview for a retail position. What should he do next?
+[ 61] A. Visit the store the next day to ask other employees how he did.
+[ 61] B. Post a video on social media to discuss the questions he was asked.
+[ 61] C. Send a brief, personalized thank-you email within 24 hours.
+[ 61] D. Call the manager once a day until he receives a job offer.
+[ 38] 33. Isaac realizes he made a mistake that may delay a project past its deadline. Which of the following is the most
+[ 61] likely consequence of Isaac hiding this mistake from his manager:
+[ 61] A. Isaac’s mistake will not be discovered and the project will hit its deadline.
+[ 61] B. Isaac’s mistake will be discovered and the project will miss its deadline.
+[ 61] C. Isaac’s manager will notice the project is behind schedule and will ignore it.
+[ 61] D. Isaac’s manager will notice the project is behind schedule and will fix it.
+[ 38] 34. After conducting an environmental scan, Caterpillar Consulting noticed a shift in consumer behavior: customers
+[ 61] are increasingly concerned about sustainability and want to support businesses that align with their values. This
+[ 61] trend falls under what category of information?
+[ 61] A. The economy
+[ 61] B. Demographics
+[ 61] C. Society and culture
+[ 61] D. Competition
+[ 38] 35. Which of the following is a routine security precaution a business should implement to protect physical assets:
+[ 61] A. Leaving computer monitors on overnight
+[ 61] B. Storing backup hard drives in an open drawer
+[ 61] C. Implementing a clear desk policy
+[ 61] D. Sharing office keys with all staff
+[ 38] 36. A customer asks you how long it will take for their order to come in. Which of the following responses best
+[ 61] demonstrates a customer service mindset:
+[ 61] A. “It should arrive by the 21st. I will email you with any updates.”
+[ 61] B. “I’m not sure. Wait a moment while I check with my manager.”
+[ 61] C. “Call back later and somebody should be able to answer that for you.”
+[ 61] D. “If I had to guess, I’d say about two weeks or so.”
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 8 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [548] 7
+[ 38] 37. Three of the most significant benefits of inspiring others include personal satisfaction, more engaged peers and
+[ 61] coworkers, and
+[ 61] A. fewer responsibilities at work.
+[ 61] B. guaranteed career success.
+[ 61] C. a reputation for leadership.
+[ 61] D. an immediate salary raise.
+[ 38] 38. Bella works at the concierge desk at a hotel. One day, a guest approaches Bella asking for extra towels, but
+[ 61] they want to be certain that they will not be charged extra. Despite Bella assuring the customer that they won’t,
+[ 61] the guest asks to speak with her supervisor to confirm. What type of difficult customer is Bella dealing with?
+[ 61] A. Slow/Methodical
+[ 61] B. Suspicious
+[ 61] C. Argumentative
+[ 61] D. Insulting
+[ 38] 39. To maintain high security standards for a business’s online banking accounts, which of the following practices
+[ 61] should an administrative assistant follow:
+[ 61] A. Store account credentials in a shared document.
+[ 61] B. Implement a schedule for regular password updates.
+[ 61] C. Use the same password across all platforms for simplicity.
+[ 61] D. Disable multi-factor authentication.
+[ 38] 40. Faith just started a new role as a quality control specialist. Faith is working in __________ management.
+[ 61] A. operations
+[ 61] B. human resources
+[ 61] C. general
+[ 61] D. business information
+[ 38] 41. Ellison, a project manager at a tech start-up, determines the most likely amount of time it will take to develop a
+[ 61] new delivery drone, as well as the best-case and worst-case scenarios. He then calculates the average. Ellison
+[ 61] used __________ to assess the project’s human resource needs.
+[ 61] A. previous experience
+[ 61] B. short-range forecasting
+[ 61] C. bottom-up estimating
+[ 61] D. three-point estimating
+[ 38] 42. Insurance is best described as a(n)
+[ 61] A. savings plan.
+[ 61] B. risk management tool.
+[ 61] C. investment strategy.
+[ 61] D. government mandate.
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 9 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [548] 8
+[ 38] 43. Liv’s Linoleum is a small company that sells a small line of renter-friendly DIY wall and flooring solutions. It has
+[ 61] been in business for many years and has a stable customer base. Most employees specialize in just one or two
+[ 61] business activities. Liv’s Linoleum should use a __________ organizational design.
+[ 61] A. lateral relational
+[ 61] B. divisional
+[ 61] C. functional
+[ 61] D. matrix
+[ 38] 44. A marketing team notices a positive correlation between social media engagement and weekly sales figures.
+[ 61] Which of the following is the most accurate interpretation of this finding:
+[ 61] A. Social media ads are the most effective marketing tool.
+[ 61] B. Low social media engagement is the direct cause of poor sales.
+[ 61] C. Increasing social media engagement is guaranteed to increase sales.
+[ 61] D. Sales tend to rise as social media engagement increases.
+[ 38] 45. The CEO of a major computer chip manufacturer lies about the performance of its products. When the lie was
+[ 61] exposed, the CEO immediately resigned. However, the company suffered a permanent loss of market share.
+[ 61] Which of the following is the primary reason why the company failed to recover its market share after the CEO’s
+[ 61] resignation:
+[ 61] A. The damage to the brand’s integrity permanently eroded public trust.
+[ 61] B. The company’s legal defense costs depleted its research and development budget.
+[ 61] C. The company faced mandatory criminal prosecution that prevented future sales.
+[ 61] D. The costs of the executive severance package created a permanent financial burden.
+[ 38] 46. Which of the following elements is required for a contract to be considered legally binding:
+[ 61] A. There must be an offer, an acceptance, and an exchange of value.
+[ 61] B. The contract must be printed on official government-issued paper.
+[ 61] C. All parties involved must be at least 21 years of age.
+[ 61] D. The agreement must be signed in the presence of a judge.
+[ 38] 47. Monty is about to send a formal email to a potential client, but notices several grammatical errors and realizes
+[ 61] that the tone may be too casual. What should he do?
+[ 61] A. Correct punctuation and ensure the tone is appropriate.
+[ 61] B. Delete the draft and try again the next day.
+[ 61] C. Ask his coworker to write their own draft and compare.
+[ 61] D. Ignore the errors and send the email immediately.
+[ 38] 48. Maki is a customer service representative for a pneumatics manufacturer and she wants to position herself to
+[ 61] be promoted. How could Maki start showing initiative?
+[ 61] A. Start learning more about her company’s products.
+[ 61] B. Start skipping calls to talk to her coworkers.
+[ 61] C. Start improvising customer calls instead of using her script.
+[ 61] D. Start attending meetings she was not invited to.
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 10 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [548] 9
+[ 38] 49. Lucille’s project is already over budget, despite being far from finished. This is a sign that the
+[ 61] A. budget should be reevaluated.
+[ 61] B. project will be a failure.
+[ 61] C. project should be cancelled.
+[ 61] D. budget should remain the same.
+[ 38] 50. Lowered morale, higher turnover in the workplace, and decreased productivity are likely all results of
+[ 61] A. a leader abusing their power.
+[ 61] B. the hiring of a new company CEO.
+[ 61] C. giving employees paid vacation.
+[ 61] D. hosting social events at work.
+[ 38] 51. Staff communication is best described as a(n) __________ process.
+[ 61] A. strictly informal
+[ 61] B. multi-directional
+[ 61] C. annual
+[ 61] D. one-way
+[ 38] 52. Management at NearDesk believes that remote work has significantly decreased company productivity. When
+[ 61] survey responses reveal that productivity has remained stable or even increased, they simply disregard the
+[ 61] contradictory information during their quarterly review. This is a challenge related to __________ information.
+[ 61] A. accessing
+[ 61] B. maintaining
+[ 61] C. disseminating
+[ 61] D. evaluating
+[ 38] 53. Luna is part of the bargaining team in her industry union. She knows the main concession that union members
+[ 61] want is a wage increase. What kind of research might she perform in preparation for this issue?
+[ 61] A. Obtain records of disciplinary action
+[ 61] B. Gather employee safety complaints
+[ 61] C. Analyze company financial reports
+[ 61] D. Compile surveys from highly paid employees
+[ 38] 54. A wet floor in a busy hallway is best described as a(n) __________, while the likelihood that a customer or
+[ 61] employee will slip and get injured is a(n) __________.
+[ 61] A. personal protective equipment; accident
+[ 61] B. risk; hazard
+[ 61] C. hazard; risk
+[ 61] D. accident; outcome
+[ 38] 55. Anita, a small business owner, is evaluating her risk management strategy. Which of the following factors is
+[ 61] most important to consider when determining the specific insurance needs of her business:
+[ 61] A. The current marketing budget and the projected growth of the economy
+[ 61] B. The nature of her business operations and the impact of specific risks
+[ 61] C. The personal credit scores of employees and Anita’s personal investment portfolio
+[ 61] D. The total number of years in the industry and the number of local competitors
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 11 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [542] 10
+[ 38] 56. Alice is searching for reliable financial data to support a new business proposal. Which of the following sources
+[ 61] would provide the most relevant and valid material:
+[ 61] A. A trending post on a popular social media platform
+[ 61] B. An undated wiki page that allows public edits
+[ 61] C. A personal blog written by a former employee of a competitor
+[ 61] D. A peer-reviewed journal article from a professional database
+[ 38] 57. GreenLeaf Urban Markets needs to store large amounts of customer data that can easily be referenced by
+[ 61] multiple departments. Which of the following is the most effective tool for this purpose:
+[ 61] A. Word processor
+[ 61] B. Presentation software
+[ 61] C. Cloud storage drive
+[ 61] D. Database management system
+[ 38] 58. Which of the following data mining techniques is primarily used to discover rules that describe specific data
+[ 61] patterns, such as “customers who buy coffee also tend to buy sugar”:
+[ 61] A. Regression mining
+[ 61] B. Clustering mining
+[ 61] C. Classification mining
+[ 61] D. Association rule mining
+[ 38] 59. Dean needs to present the sequential phases of a product launch to his team to ensure everyone understands
+[ 61] the timeline. The organizational method most effective for this purpose is __________ organization.
+[ 61] A. deductive
+[ 61] B. alphabetical
+[ 61] C. chronological
+[ 61] D. geographical
+[ 38] 60. Reagan makes a large purchase on her credit card with a 10% APR and decides to pay minimums on it rather
+[ 61] than paying it off all at once. The total amount Reagan pays will be
+[ 61] A. more than if she paid her statement in full.
+[ 61] B. the exact amount she made the purchase for.
+[ 61] C. $0 or close to $0 after interest fees and returns.
+[ 61] D. less than if she paid her statement in full.
+[ 38] 61. One of the main responsibilities of the Human Resources (HR) department is to ensure that the right people are
+[ 61] working in the right positions. Which of the following HR activities is most directly related to this responsibility:
+[ 61] A. Administering compensation and benefits
+[ 61] B. Advertising the company’s products
+[ 61] C. Recruiting and selecting new employees
+[ 61] D. Managing the company’s finances
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 12 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [542] 11
+[ 38] 62. A potential investor is trying to decide if a local bowling alley would be a sound investment. Which of the
+[ 61] following represents the most relevant financial information for this decision:
+[ 61] A. The cost of the building that houses the bowling alley
+[ 61] B. The bowling alley’s profit over the past five years
+[ 61] C. The average number of visits per member, per year
+[ 61] D. The average wage of the bowling alley’s employees
+[ 38] 63. Maya, a marketing assistant, has a creative idea for a new campaign, but her direct supervisor is on vacation.
+[ 61] Instead of waiting or speaking to the assistant manager, Maya emails the CEO to pitch her idea. Why is this
+[ 61] action considered a violation of the chain of command?
+[ 61] A. Because internal ideas must always be delivered via face-to-face discussion, not email
+[ 61] B. Because a marketing assistant’s primary role is administrative support, not creative strategy
+[ 61] C. Because she bypassed the intermediate levels of authority responsible for her department
+[ 61] D. Because the CEO is the only individual authorized to make final marketing decisions
+[ 38] 64. Which of the following is the most effective example of a SMART financial goal for a startup company:
+[ 61] A. To invest a significant portion of monthly profits into the stock market to build a rainy-day fund
+[ 61] B. To become the most profitable company in the local region as quickly as possible
+[ 61] C. To increase total revenue by 15% through the expansion of online sales by December 31
+[ 61] D. To reduce business expenses by cutting unnecessary costs across all departments
+[ 38] 65. Gibson is an intern at a wildlife research center. His manager tells him during a performance review that he
+[ 61] should be more receptive to feedback from his peers. How can Gibson be more receptive?
+[ 61] A. Keep his workspace neat and prioritize tasks
+[ 61] B. Compromise and work together with his peers
+[ 61] C. Have a positive attitude and listen to criticism
+[ 61] D. Speak with more confidence and authority
+[ 38] 66. After analyzing its production processes, Hammer & Forge realizes its assembly line workers must walk five
+[ 61] extra steps to reach their tool stations. Which of the seven wastes of lean production did the company identify?
+[ 61] A. Waiting
+[ 61] B. Motion
+[ 61] C. Defective products
+[ 61] D. Over-processing
+[ 38] 67. Ron manages a team of engineers. After nearly missing a major deadline, he decides to start assigning tasks to
+[ 61] pairs of engineers instead of individuals. He finds that tasks get completed faster and more consistently. This is
+[ 61] an example of collaboration
+[ 61] A. increasing innovation.
+[ 61] B. being used as a punishment.
+[ 61] C. at the cost of speed and efficiency.
+[ 61] D. increasing employee performance.
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 13 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [542] 12
+[ 38] 68. Jocelyn was recently let go from her customer service position due to downsizing. Which of the following could
+[ 61] be considered a ‘silver lining’ to her unemployment:
+[ 61] A. She can reexamine her talents, skills, and desires.
+[ 61] B. She is entering a very competitive job market.
+[ 61] C. She will have difficulty paying her bills.
+[ 61] D. She has feelings of self-doubt.
+[ 38] 69. VelaSource, a software company, has developed a unique piece of source code that gives it a competitive
+[ 61] advantage. It chooses to keep the code private rather than filing for public legal protection. Which method of
+[ 61] intellectual property protection is VelaSource using?
+[ 61] A. Copyright
+[ 61] B. Trade secret
+[ 61] C. Patent
+[ 61] D. Trademark
+[ 38] 70. Maria, a client relations manager, tells her team, “Our goal for this quarter is to provide much better customer
+[ 61] service than we did last quarter.” Why does this goal fail to function as an effective organizational tool?
+[ 61] A. It is not measurable, making it impossible to track progress.
+[ 61] B. It is a personal goal rather than a business goal.
+[ 61] C. It is too challenging for entry-level employees to achieve.
+[ 61] D. It focuses on the customer rather than on making a profit.
+[ 38] 71. Katrina is interested in investing her money. She is willing to accept some risk for a greater return but doesn’t
+[ 61] want to make all the investment decisions on her own. What kind of investment should Katrina consider?
+[ 61] A. Mutual funds
+[ 61] B. Stocks
+[ 61] C. Collectibles
+[ 61] D. Money market accounts
+[ 38] 72. Yamato works at a desk most days and thinks his job is boring and slow. He notices that on days where he has
+[ 61] many meetings, collaborates with his coworkers, and talks to different teams or managers, he enjoys his job
+[ 61] and feels more productive. What could Yamato conclude about his strengths and weaknesses?
+[ 61] A. He works best alone and at a desk.
+[ 61] B. He works best with people and activity.
+[ 61] C. He is lazy and does not like doing work.
+[ 61] D. He has no particular strengths or weaknesses.
+[ 38] 73. Yuna loves animals and values animal rights and protection. She works for a nonprofit organization that
+[ 61] rehabilitates and cares for sick pets and strays, which is very fulfilling. This is an example of someone
+[ 61] A. adopting values based on their behaviors.
+[ 61] B. misaligning their behaviors and their values.
+[ 61] C. regularly changing their behaviors and values.
+[ 61] D. aligning their behaviors with their values.
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 14 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [542] 13
+[ 38] 74. Lars was hired to manage the kitchen of a catering company. Although he is brand new, he wants his
+[ 61] employees to respect him and his position. What should Lars do?
+[ 61] A. Treat his employees with respect from the beginning
+[ 61] B. Let his employees do whatever they want
+[ 61] C. Start punishing employees to establish dominance
+[ 61] D. Treat his employees poorly until they respect him
+[ 38] 75. Shawn is comparing two reports on market growth. Report A is published by a company that sells products in
+[ 61] the industry, while Report B is from an independent government bureau. Why is Report B better for objective
+[ 61] decision-making?
+[ 61] A. It is written by industry insiders who have more real-world experience.
+[ 61] B. It is produced by a neutral party with less incentive to bias the data.
+[ 61] C. It was primarily created to promote a specific point of view.
+[ 61] D. It is likely to have more colorful charts and a modern layout.
+[ 38] 76. Sparkle is a premium laundry detergent company struggling to compete with cheaper generic brands. Instead of
+[ 61] lowering prices, the company shifts its marketing to highlight that the detergent allows for high-speed, cold-
+[ 61] water washing, saving customers 50% on energy bills. This shift in how the product is perceived is an example
+[ 61] of__________ innovation.
+[ 61] A. paradigm
+[ 61] B. product
+[ 61] C. positioning
+[ 61] D. process
+[ 38] 77. Nicky is reviewing the company’s limited budget for office supplies and the high frequency of printer ink
+[ 61] replacements. Which policy should the company implement to manage these resources effectively?
+[ 61] A. A procedure requiring employees to print all internal memos in color
+[ 61] B. A procedure to remove all printers from the office
+[ 61] C. A policy allowing unlimited personal use of office printers
+[ 61] D. A policy requiring manager approval for print jobs exceeding 20 pages
+[ 38] 78. Which of the following is a disadvantage of sole proprietorship:
+[ 61] A. Unlimited liability
+[ 61] B. Funding through the stock market
+[ 61] C. Limited liability
+[ 61] D. Combining capital with another owner
+[ 38] 79. In a professional business environment, why is maintaining a clean and appropriate personal appearance
+[ 61] considered a form of nonverbal communication?
+[ 61] A. It sends a message about your professionalism before you speak.
+[ 61] B. It is the only factor an employer uses to determine if you are a good worker.
+[ 61] C. It allows you to avoid speaking to customers directly day-to-day.
+[ 61] D. It proves that you have more money than the other candidates.
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 15 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [542] 14
+[ 38] 80. Yolanda manages a team of software developers. She rarely makes decisions without consulting the team first.
+[ 61] Yolanda is practicing __________ management.
+[ 61] A. democratic
+[ 61] B. autocratic
+[ 61] C. authoritarian
+[ 61] D. laissez-faire
+[ 38] 81. The Leaky Boot, a new themed bar, earns $700,000 in revenue in its first year. $300,000 of this was spent on
+[ 61] food, drinks, and other business expenses. $250,000 was spent on employee wages and salaries. An additional
+[ 61] $30,000 was spent on promotions and advertising. After deductions, what is the Leaky Boot’s taxable income?
+[ 61] A. $700,000
+[ 61] B. $580,000
+[ 61] C. $120,000
+[ 61] D. $150,000
+[ 38] 82. Riss manages a small product development team. How can she best promote a culture of creativity and
+[ 61] professionalism?
+[ 61] A. By bringing on members who do not share those traits
+[ 61] B. By bringing on members who share those traits
+[ 61] C. By forcing her employees to act in line with those traits
+[ 61] D. By telling her employees how they should behave
+[ 38] 83. Aldin is a music producer. Due to ethical concerns around using AI-generated art, Aldin decides to only use
+[ 61] original art made by real people for his album covers. Which of the following is a likely result of Aldin’s decision:
+[ 61] A. Greater support from customers
+[ 61] B. Increased risk of legal problems
+[ 61] C. Reduced production costs
+[ 61] D. Decreased trust from customers
+[ 38] 84. Which of the following is an example of a relevant question to ask during a meeting about a new product
+[ 61] launch:
+[ 61] A. “Who was in charge of product development 10 years ago?”
+[ 61] B. “How will the success of this launch be measured?”
+[ 61] C. “What time is the company holiday party next month?”
+[ 61] D. “What all is included in our company’s insurance plan?”
+[ 38] 85. Marlin starts working as a salesman at a new company. Because he wants to make friends at the company, he
+[ 61] spends lots of time with a group of coworkers that he thinks occasionally acts unethically. One possible
+[ 61] consequence of this is that
+[ 61] A. Marlin will influence them to act more ethically.
+[ 61] B. their unethical behavior may hurt Marlin’s reputation.
+[ 61] C. Marlin may quickly move up the corporate ladder.
+[ 61] D. their unethical behavior will be blamed on Marlin.
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 16 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [542] 15
+[ 38] 86. Remy lives in an economy with a combination of publicly and privately owned goods and services. Some
+[ 61] services like healthcare and education are provided by the government, but many consumer goods like food
+[ 61] and clothing are controlled by the private sector. Remy lives in a __________ economy.
+[ 61] A. traditional
+[ 61] B. mixed
+[ 61] C. market
+[ 61] D. communist
+[ 38] 87. Which of the following best describes a business responding to risk by using transference:
+[ 61] A. Reducing or controlling a risk's impact
+[ 61] B. Choosing not to do something risky
+[ 61] C. Accepting a risk's consequences
+[ 61] D. Moving the impact of risk to someone else
+[ 38] 88. Tanya is writing a proposal to convince a local retailer to carry her new product line. Which approach would be
+[ 61] most persuasive?
+[ 61] A. Assert that her product is the only good option available.
+[ 61] B. Highlight how her product will increase the retailer’s sales.
+[ 61] C. List all information relevant to her product in a bulleted list.
+[ 61] D. Emphasize the personal financial needs of her business.
+[ 38] 89. Lana is an experienced accountant for a large retail company. After being out late the night before, she makes
+[ 61] several accounting errors while reviewing an important financial report. The mistakes cause confusion and
+[ 61] uncertainty when the report is released. What ethical principle did Lana fail to practice?
+[ 61] A. Objectivity
+[ 61] B. Public interest
+[ 61] C. Due care
+[ 61] D. Integrity
+[ 38] 90. Which of the following best describes the main purpose of import and export laws in international trade:
+[ 61] A. To ensure all countries use the same currency
+[ 61] B. To regulate the flow of goods across borders
+[ 61] C. To eliminate competition for domestic manufacturers
+[ 61] D. To grant private corporations the authority to set tax rates
+[ 38] 91. Ashwin, chief people officer at Synergize, supports a new employee wellness initiative, promotes it throughout
+[ 61] the company, and ensures it remains a priority for the board. Ashwin is a
+[ 61] A. resource manager.
+[ 61] B. project champion.
+[ 61] C. project manager.
+[ 61] D. steering committee member.
+[ 38] 92. Canned goods, vehicles, and household appliances are commonly created using __________ production.
+[ 61] A. batch
+[ 61] B. mass
+[ 61] C. unit
+[ 61] D. intermittent
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 17 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [542] 16
+[ 38] 93. Terri needs a financial institution that offers a wide range of services, including commercial loans and
+[ 61] investment services. She specifically wants an institution that is for-profit and owned by stockholders. Which
+[ 61] type of financial-services provider should she choose?
+[ 61] A. Credit union
+[ 61] B. Brokerage firm
+[ 61] C. Insurance company
+[ 61] D. Commercial bank
+[ 38] 94. Manuel, a car salesman, senses a customer’s growing anxiety about the monthly payments for a new truck.
+[ 61] Manuel advocates to his finance manager to extend the loan term by 12 months. The lower payment puts the
+[ 61] customer at ease, and they close the deal. How did having empathy help Manuel?
+[ 61] A. It gave Manuel leverage over the customer.
+[ 61] B. It made the customer more comfortable.
+[ 61] C. It made the customer more vulnerable.
+[ 61] D. It gave the customer leverage over Manuel.
+[ 38] 95. What would be a likely consequence of the U.S. dollar depreciating on the foreign exchange due to low interest
+[ 61] rates and high government debt?
+[ 61] A. Decreased cost of living in the U.S.
+[ 61] B. Increased competitiveness in foreign markets
+[ 61] C. Increased consumer confidence
+[ 61] D. Decreased exports into foreign markets
+[ 38] 96. Which of the following actions best demonstrates making a responsible financial decision when managing a
+[ 61] business’s cash flow:
+[ 61] A. Delaying payments to essential vendors to inflate the current month’s profit report
+[ 61] B. Prioritizing the purchase of luxury office decor to impress potential investors
+[ 61] C. Utilizing a high-interest credit card to cover long-term expansion costs
+[ 61] D. Allocating funds to an emergency fund before committing to capital expenditures
+[ 38] 97. Juniper, a manager at a small firm, is struggling to manage a rapidly growing workload. Which of the following
+[ 61] would be the most effective starting point for her to prioritize her tasks:
+[ 61] A. Categorizing her tasks by urgency
+[ 61] B. Completing the most difficult tasks first
+[ 61] C. Rescheduling all upcoming deadlines
+[ 61] D. Increasing her daily working hours
+[ 38] 98. Huda’s manager, Silvester, is requesting vendor contract agreements from three years ago to resolve a billing
+[ 61] dispute with one of their suppliers. Luckily, Huda refers to a centralized file index to quickly locate the files and
+[ 61] share them with Silvester. This is an example of how information management helps
+[ 61] A. save time and money.
+[ 61] B. maintain organizational consistency.
+[ 61] C. comply with laws and regulations.
+[ 61] D. support decision-making.
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 18 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [195] BUSINESS ADMINISTRATION CORE EXAM  ||  [542] 17
+[ 38] 99. Adrienne manages the production floor of a manufacturing plant. Each week, she rotates line workers to a new
+[ 61] station or machine. She also gives employees frequent opportunities to learn more about the products they
+[ 61] make and how they’re used. One reason Adrienne may do this is to
+[ 61] A. increase production speed.
+[ 61] B. reduce waste.
+[ 61] C. increase company profits.
+[ 61] D. combat job boredom.
+[ 38] 100. To ensure employees don’t accidentally modify important business records, management should save files in
+[ 61] a(n) __________ format.
+[ 61] A. editable
+[ 61] B. read-only
+[ 61] C. compressed
+[ 61] D. encrypted
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 19 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [548] 1
+[ 38] 1. C
+[ 64] Self-control. Self-control is the ability to manage your feelings, words, and actions. People who have self-
+[ 64] control are in charge of themselves. They maintain control over their emotions and temper, and they consider
+[ 64] the consequences of their behavior before they speak or act. In this experiment, the scientist is testing the
+[ 64] child’s ability to resist eating the marshmallow, or their self-control. Memory refers to the ability to recall
+[ 64] information. Language skills are the abilities that allow individuals to effectively communicate by listening,
+[ 64] speaking, reading, and writing. Ethics are the basic principles that govern your behavior. This experiment does
+[ 64] not test the child’s memory, language skills, or ethics.
+[ 64] SOURCE: EI:025 Demonstrate self-control
+[ 64] SOURCE: LAP-EI-025—Control Yourself! (Demonstrating Self-Control)
+[ 38] 2. C
+[ 64] Politely and firmly say no. Since Erika already refused once and her coworker is still trying to push the issue,
+[ 64] Erika needs to assert herself by firmly but politely saying no. Raising her voice would be aggressive. Agreeing
+[ 64] to help without being able to fully commit would be dishonest and create problems later. Saying she will
+[ 64] consider it is dishonest and merely delays the rest of the conversation.
+[ 64] SOURCE: EI:008 Use appropriate assertiveness
+[ 64] SOURCE: LAP-EI-008—Assert Yourself (Assertiveness)
+[ 38] 3. C
+[ 64] A part. Industrial goods are classified as materials, parts, installations, equipment, or supplies. A part is an item
+[ 64] that is complete and will become part of the finished product. A microchip is made and processed at a
+[ 64] manufacturing plant, then made part of a computer. Materials still need to be processed. Installations are used
+[ 64] to produce other goods and services. Equipment is used in business operations, not in the product itself.
+[ 64] SOURCE: EC:002 Distinguish between economic goods and services
+[ 64] SOURCE: LAP-EC-002—Get the Goods on Goods and Services (Economic Goods and Services)
+[ 38] 4. C
+[ 64] Flexibility. Flexibility is the ability to adapt to changing conditions with relative ease. This is shown in Megan’s
+[ 64] willingness to smoothly transition her work and adapt to the new direction. Ambiguity involves the acceptance
+[ 64] of vagueness or doubt, while independence allows creatives to express themselves without relying on other
+[ 64] people. Finally, passion is being devoted to or enthusiastic about a subject.
+[ 64] SOURCE: PD:012 Demonstrate appropriate creativity
+[ 64] SOURCE: LAP-PD-012—Imagine That (Demonstrating Creativity)
+[ 38] 5. B
+[ 64] Rashad’s lack of commitment. A multidisciplinary team relies on each of its members doing their part. Rashad’s
+[ 64] lack of commitment leads to bottlenecks in the project timeline, and ultimately to the missed deadline. A team
+[ 64] must rely on its members, including Rashad. The main cause of the bottleneck was Rashad’s behavior, not his
+[ 64] manager’s or the project deadline itself.
+[ 64] SOURCE: EI:045 Participate as a team member
+[ 64] SOURCE: LAP-EI-045—Team Up (Participating as a Team Member)
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 20 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [548] 2
+[ 38] 6. A
+[ 64] Identifying needs. Developing specifications, or requirements, for the goods or services to be purchased is part
+[ 64] of the first step of the purchasing process—identifying needs. Selecting suppliers involves searching for
+[ 64] suppliers online, in trade publications, through advertisements, in catalogs, from salespeople, or at trade
+[ 64] shows. Placing orders involves sending a purchase order to the supplier to indicate that the company is ready
+[ 64] to make the purchase. Evaluating supplier performance is the last step of the purchasing process and involves
+[ 64] reviewing the order and determining if the supplier followed through on its performance.
+[ 64] SOURCE: OP:015 Explain the nature and scope of purchasing
+[ 64] SOURCE: LAP-OP-015—Buy Right (Purchasing)
+[ 38] 7. A
+[ 64] Licensing. Licensing is a method that government uses to regulate business by controlling who is allowed to
+[ 64] function in the marketplace. In this case, Thad is trying to get a liquor license for his restaurant. Price controls
+[ 64] refer to ceilings on how much a business can charge for a product. Zoning refers to regulations around
+[ 64] property. Price discrimination occurs when businesses sell the same product at different prices depending on
+[ 64] the customer.
+[ 64] SOURCE: EC:008 Determine the relationship between government and business
+[ 64] SOURCE: LAP-EC-008—Regulate and Protect (Government and Business)
+[ 38] 8. C
+[ 64] Scheduling. Scheduling is an operations activity that establishes the timetable to be followed in production. It
+[ 64] controls the flow of the entire production process by determining when materials will arrive at a certain
+[ 64] destination and how long they will stay there. Routing involves selecting the sequence in which the steps of
+[ 64] production need to be carried out. Logistics refers to managing the flow of goods and services from production
+[ 64] to consumption. This includes all the people, information, and processes involved in storing and transporting
+[ 64] goods. Expense control refers to keeping an eye on the bottom line. In this scenario, Lumi is not responsible for
+[ 64] routing, logistics, or expense control.
+[ 64] SOURCE: OP:189 Explain the nature of operations
+[ 64] SOURCE: LAP-OP-189—Smooth Operations (Nature of Operations)
+[ 38] 9. A
+[ 64] Their demand will decrease. Fishing licenses and equipment like fishing rods are complementary goods. This
+[ 64] means that changes in supply and demand of one good is likely to affect the other. In this case, the jump in
+[ 64] fishing license prices is likely to decrease demand for fishing licenses and, as a result, decrease demand for
+[ 64] fishing equipment. The demand for complementary goods does not have a direct effect on tax rates.
+[ 64] SOURCE: EC:005 Explain the principles of supply and demand
+[ 64] SOURCE: LAP-EC-905—It's the Law (Supply and Demand)
+[ 38] 10. D
+[ 64] Conditional formatting. Conditional formatting is a specific tool designed to apply styles to cells only when they
+[ 64] meet certain criteria, helping users visually highlight trends. Data validation is used to restrict the type of data
+[ 64] or values that users can enter into a cell, rather than change its appearance. Goal seek is a “what-if” analysis
+[ 64] tool used to find the input value needed to achieve a desired result in a formula. Pivot tables are used for
+[ 64] exploring large datasets, not for styling individual cells based on their content.
+[ 64] SOURCE: NF:010 Demonstrate basic spreadsheet applications
+[ 64] SOURCE: University of York. (2026, January 27). Spreadsheet basics – Essential spreadsheets: a practical
+[120] guide. Retrieved February 2, 2026, from https://subjectguides.york.ac.uk/spreadsheets/basics
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 21 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [548] 3
+[ 38] 11. A
+[ 64] Information security. Information security refers to the specific methods used to protect systems and data from
+[ 64] unauthorized access or theft. Data transparency refers to the openness of an organization regarding how it
+[ 64] collects and uses data. Information sharing focuses on how employees communicate information to one
+[ 64] another. Data analysis is the process of inspecting data to discover useful information.
+[ 64] SOURCE: OP:441 Explain information privacy, security, and confidentiality considerations in business
+[ 64] SOURCE: Holdsworth, J., & Kosinski, M. (n.d.). What is information security (InfoSec)? Retrieved February 2,
+[120] 2026, from https://www.ibm.com/think/topics/information-security
+[ 38] 12. A
+[ 64] Product/Service management. The product/service management marketing function involves obtaining,
+[ 64] developing, maintaining, and improving a product or service mix in response to market opportunities. During
+[ 64] this process, product/service management tries to answer questions such as “What new products should be
+[ 64] developed?” and “Is the product packaged appropriately?” The pricing function involves determining and
+[ 64] adjusting prices to maximize return and meet customers’ perceptions of value. Channel management is
+[ 64] responsible for identifying, selecting, monitoring, and evaluating sales channels, also known as channels of
+[ 64] distribution. The purpose of the promotion function is to communicate information about goods, services,
+[ 64] images, or ideas to achieve a desired outcome.
+[ 64] SOURCE: MK:002 Describe marketing functions and related activities
+[ 64] SOURCE: LAP-MK-002—Work the Big Seven (Marketing Functions)
+[ 38] 13. A
+[ 64] Fixed. Operating costs that do not increase or decrease with changes in production are called fixed costs or
+[ 64] expenses. These are the expenses that must be paid no matter what. Examples of fixed expenses include
+[ 64] insurance premiums, property taxes, rent/mortgage, wages/salaries, and insurance. Variable costs or expenses
+[ 64] fluctuate with changes in production; examples include advertising and promotion, travel expenses, and sales
+[ 64] commissions. Semi-variable costs are fixed until the company reaches a certain level of production; after that,
+[ 64] they become variable. An example is a manufacturer that has a fixed cost for its employees’ wages, but pays
+[ 64] more for overtime, which is a variable cost.
+[ 64] SOURCE: OP:024 Explain the nature of overhead/operating costs
+[ 64] SOURCE: LAP-OP-024—Watch Your (Over) Head (Overhead/Operating Costs)
+[ 38] 14. A
+[ 64] Managing a budget and scheduling meetings for the Art Club. The responsibility involved with managing a
+[ 64] budget and scheduling meetings is exactly what employers look for in entry level hires. This demonstrates
+[ 64] functional experience that can be put on a resume even if the student hasn’t had a paycheck yet. Participating
+[ 64] in weekly practices shows dedication, but gaming isn’t typically seen as a workplace substitute unless the
+[ 64] student was organizing the event or managing a team. Unless the student is applying for a digital marketing
+[ 64] role and can show how they grew the audience strategically, high followers are usually seen as personal rather
+[ 64] than professional. Finally, contributing to discussions and attending film screenings are passive activities. They
+[ 64] don’t demonstrate a specific skill (like leadership or organization) that a manager can use.
+[ 64] SOURCE: PD:032 Describe techniques for obtaining work experience (e.g., volunteer activities, internships)
+[ 64] SOURCE: Herrity, J. (2025, December 16). Transferable skills: 10 skills that work across industries. Retrieved
+[120] February 4, 2026, from https://www.indeed.com/career-advice/resumes-cover-letters/transferable-
+[120] skills
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 22 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [548] 4
+[ 38] 15. B
+[ 64] Integrity. Data integrity is a foundational principle; if the data are inaccurate, any subsequent analysis based on
+[ 64] those data will be flawed. While having enough data is important, volume without relevance can obscure the
+[ 64] actual insights needed to solve a problem. While visualization helps in communicating results, the aesthetic
+[ 64] quality of a report is secondary to the reliability of the analysis. Data analysis usually aims to improve
+[ 64] organizational performance. Isolating data often leads to silos that prevent collaborative problem-solving.
+[ 64] SOURCE: NF:139 Explain the principles of data analysis
+[ 64] SOURCE: Salesforce. (2026). Guide to data integrity. Retrieved January 28, 2026, from
+[120] https://www.salesforce.com/data/what-is-data-integrity/
+[ 38] 16. C
+[ 64] Short term. A short-term goal typically takes under a year, while a long-term goal is achieved in more than a
+[ 64] year. Performance-based goals focus on the outcome of the specific goal as opposed to the completion of it,
+[ 64] and a learning goal deals with mastering a new skill.
+[ 64] SOURCE: PD:018 Set personal goals
+[ 64] SOURCE: LAP-PD-918—Go for the Goal (Goal Setting)
+[ 38] 17. C
+[ 64] Asking questions. Asking questions is an important part of active listening. It both demonstrates that the listener
+[ 64] is paying attention and encourages more and deeper conversation. Letty was not distracted. She was focused
+[ 64] on Ishmael while he spoke. Interrupting Ishmael would have been rude and might have given the impression
+[ 64] that Letty was not interested in the conversation.
+[ 64] SOURCE: CO:017 Demonstrate active listening skills
+[ 64] SOURCE: LAP-CO-017—Listen Up! (Demonstrating Active Listening Skills)
+[ 38] 18. D
+[ 64] Reposting an industry news article. Business use is defined by strategic communication intended to build brand
+[ 64] authority, engage a professional audience, and provide value to stakeholders or clients. Sharing his personal
+[ 64] career journey does not align with professional organizational goals; Alfonso should focus on the official brand
+[ 64] on the company account, not his story. Using a platform for private, non-work-related social interactions is the
+[ 64] definition of personal use. Business profile elements should reflect corporate identity and branding; using
+[ 64] personal photos is not representative of the company, but of an individual.
+[ 64] SOURCE: CO:206 Distinguish between using social media for business and personal purposes
+[ 64] SOURCE: Kurtz, N. (2021, May 13). Shift your mindset: Social media for business vs. personal use.
+[120] Retrieved January 27, 2026, from https://www.aducatedigital.com/advice/social-media-business-
+[120] vs-personal-use/
+[ 38] 19. A
+[ 64] Fatigue. When an employee is struggling to stay awake at their desk, they are exhibiting fatigue, which is a
+[ 64] sign that they may be stressed out. Stress can cause trouble sleeping at night, which can lead to exhaustion
+[ 64] during the day. Low morale refers to employees who are not excited about their work. Illness refers to physical
+[ 64] health problems such as the cold or flu. Absenteeism occurs when employees either skip or miss work. This
+[ 64] employee is not exhibiting low morale, illness, or absenteeism.
+[ 64] SOURCE: EI:028 Explain the nature of stress management
+[ 64] SOURCE: LAP-EI-028—Keep Your Cool (Stress Management)
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 23 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [548] 5
+[ 38] 20. D
+[ 64] Actively listening to others. Effective group participation involves active listening. Interrupting is unprofessional.
+[ 64] Total silence prevents the group from benefiting from diverse perspectives and fails to fulfill the participants’
+[ 64] responsibility to contribute. Overusing technical jargon can alienate team members and hinder clear
+[ 64] communication.
+[ 64] SOURCE: CO:053 Participate in group discussions
+[ 64] SOURCE: Indeed. (2025, December 16). 15 do’s and don’ts of group discussions. Retrieved January 28,
+[120] 2026, from https://www.indeed.com/career-advice/career-development/dos-and-donts-of-group-
+[120] discussion
+[ 38] 21. A
+[ 64] Current. Assets with continually changing value, such as cash or inventory, are called current assets. Capital
+[ 64] assets refer to property that a company permanently owns. Intangible assets are assets that are not physical in
+[ 64] nature. Other assets are any assets not considered part of current or capital assets.
+[ 64] SOURCE: FI:354 Explain the role of finance in business
+[ 64] SOURCE: LAP-FI-354—Money Matters (Role of Finance)
+[ 38] 22. A
+[ 64] Cotton Core is likely to be successful because it practices customer experience management. In an experience
+[ 64] economy, customers often care as much about having positive experiences as they do about pricing, so a store
+[ 64] with slightly higher prices is still likely to find success if it provides a great customer experience. Peak Chic
+[ 64] does not practice customer relationship management. Customers do often care about quality.
+[ 64] SOURCE: CR:016 Discuss the nature of customer relationship management
+[ 64] SOURCE: LAP-CR-016— Know When To Hold 'Em (Nature of Customer Relationship Management)
+[ 38] 23. A
+[ 64] Determine his walk-away point before negotiating. Luca’s walk-away point is the highest price he would be
+[ 64] willing to pay for a used motorhome. Knowing this beforehand would give him valuable preparation for
+[ 64] negotiating his price and prevent him from overpaying. Going into negotiations blind is generally a bad idea.
+[ 64] The salesperson’s first offer is not likely to be the best offer for Luca, so he should negotiate for an offer he is
+[ 64] happy with. Avoiding negotiations does not guarantee a lower price.
+[ 64] SOURCE: EI:062 Demonstrate negotiation skills
+[ 64] SOURCE: LAP-EI-062—Make it a Win-Win (Negotiation in Business)
+[ 38] 24. A
+[ 64] Presenting a clear message. Presentations should be clear in what they are trying to communicate. Serena’s
+[ 64] audience indicated they were unsure about the main point of her presentation, implying her main points were
+[ 64] unclear. Serena’s audience indicated that they were quickly engaged, so the beginning of her presentation was
+[ 64] strong. They did not indicate confusion about her mannerisms or delivery. They also complimented her use of
+[ 64] visual aids.
+[ 64] SOURCE: CO:025 Make oral presentations
+[ 64] SOURCE: LAP-CO-025—Well Said! (Making Oral Presentations)
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 24 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [548] 6
+[ 38] 25. A
+[ 64] Expert system. Expert systems are a special kind of computer software designed to mimic the knowledge of a
+[ 64] human expert. For example, automotive mechanics, medical professionals, and financial advisors often use
+[ 64] expert systems to diagnose issues and recommend solutions. This allows them to fix the problem more quickly.
+[ 64] Voice over Internet Protocol (VoIP) is a type of technology that connects people quickly, either by voice or by
+[ 64] voice and picture combined (think Zoom or FaceTime). Computer-aided design (CAD) is the use of technology
+[ 64] and software to create, test, and rework products in the virtual world before spending money to produce them
+[ 64] in the physical world. Global Positioning System (GPS) is a navigational system that uses satellite technology
+[ 64] to determine location and provide directions.
+[ 64] SOURCE: NF:003 Identify ways that technology impacts business
+[ 64] SOURCE: LAP-NF-003—TECH-tastic (Technology’s Impact on Business)
+[ 38] 26. D
+[ 64] Short-form videos and promotions on social media. Based on the requirements of its employees, young, trendy
+[ 64] fashion and a laid-back atmosphere are part of Heart Tokyo’s brand promise. Modern advertising media, like
+[ 64] short videos and social media, are therefore most consistent with its brand. Printed ads, word-of-mouth, email,
+[ 64] and TV or radio ads are all less trendy touchpoints.
+[ 64] SOURCE: CR:001 Identify company's brand promise
+[ 64] SOURCE: LAP-CR-001—Share the Promise (Identifying Brand Promise)
+[ 38] 27. B
+[ 64] Tell them she will reflect on the issue and share her decision later. Pausing to reflect on new or conflicting ideas
+[ 64] is key to considering them fully and openly. If Nala wants to come to the best decision, she should take the
+[ 64] necessary time to determine the better option. Telling them to just agree on either idea does not solve the
+[ 64] conflict or help the team. Making project decisions based on gut feelings is not generally a good idea. Rejecting
+[ 64] ideas because they are not fully agreed upon will make it very hard to find good solutions.
+[ 64] SOURCE: EI:136 Consider conflicting viewpoints
+[ 64] SOURCE: LAP-EI-136—Pick a Side (Considering Conflicting Viewpoints)
+[ 38] 28. C
+[ 64] Efficient. The efficient supply chain model is popular in markets where there is intense competition; companies
+[ 64] aim to prioritize supply chain efficiency and delivery excellence over creating a product that stands out from the
+[ 64] competition. This supply chain emphasizes the movement of the product, rather than the product itself. The
+[ 64] efficient model prioritizes product availability and order fulfillment. General Mills focuses on end-to-end
+[ 64] efficiency along its supply chain to reduce costs for both the company and its vendors. The flexible supply
+[ 64] chain model is used by organizations in industries that typically experience periods of extremely high demand
+[ 64] followed by periods of low demand. The fast supply chain model is best suited for trendy products in markets
+[ 64] where demand changes rapidly. The continuous flow supply chain model emphasizes stability and consistency,
+[ 64] and is typically employed in industries where supply and demand are predictable and secure.
+[ 64] SOURCE: OP:443 Explain the concept of supply chain
+[ 64] SOURCE: LAP-OP-443—Deliver the Goods (Concept of Supply Chains)
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 25 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [548] 7
+[ 38] 29. B
+[ 64] Notify a supervisor. Immediate reporting ensures that the company can initiate emergency protocols, secure
+[ 64] the scene, and provide necessary medical attention or documentation. Filing an insurance claim is a secondary
+[ 64] administrative step that occurs after the initial incident has been reported and documented. Cleaning the area
+[ 64] before it is inspected can disturb evidence needed to determine the cause of the accident and prevent future
+[ 64] occurrences. It is not necessary to scream for help if you are not seriously injured.
+[ 64] SOURCE: OP:009 Explain procedures for handling accidents
+[ 64] SOURCE: Centennial Medical Group. (n.d.). How to respond to workplace accidents and injuries. Retrieved
+[120] February 2, 2026, from https://centennialmedical.com/how-to-respond-to-workplace-accidents-
+[120] and-injuries/
+[ 38] 30. D
+[ 64] Successful. Before potential investors put their money into a business or buy any stock, they investigate
+[ 64] whether the business expects to make a profit and how large the business expects that profit to be. A business
+[ 64] with consistent yearly profit growth is appealing to investors; in other words, its financial performance has been
+[ 64] successful. A business with fluctuating profits from year-to-year indicates its financial performance is average
+[ 64] or inconsistent. There is no indication that Nimbus Core’s consistent yearly growth has been modeled.
+[ 64] SOURCE: FI:094 Describe the nature of income statements
+[ 64] SOURCE: LAP-FI-094—Watch Your Bottom Line (Income Statements)
+[ 38] 31. C
+[ 64] Buy a machine with a good warranty. Rekha can avoid the risk of a faulty machine by transferring the risk to the
+[ 64] company she is buying it from. This is done through a warranty which will guarantee a replacement if the
+[ 64] machine does not work as intended. Rekha cannot avoid buying a machine. Restricting use of the machine
+[ 64] does not prevent the machine from being faulty. Buying a cheaper machine does not decrease the chance that
+[ 64] the machine will be faulty.
+[ 64] SOURCE: EC:011 Determine factors affecting business risk
+[ 64] SOURCE: LAP-EC-911—Lose, Win, or Draw (Business Risk)
+[ 38] 32. C
+[ 64] Send a brief, personalized thank-you email within 24 hours. Sending a thank-you message is a vital part of the
+[ 64] post-interview procedure. It accomplishes three things: it shows professional courtesy, reinforces your interest
+[ 64] in the position, and keeps your name top of mind for the hiring manager while they are making their final
+[ 64] decision. Calling the manager each day would be bothersome, visiting the store to question other employees
+[ 64] would be inappropriate, and posting a video on social media would be ineffective in securing a job offer.
+[ 64] SOURCE: PD:028 Interview for a job
+[ 64] SOURCE: Indeed. (2025, December 19). What to do after an interview: 9 tips to help you succeed. Retrieved
+[120] February 4, 2026, from https://www.indeed.com/career-advice/interviewing/what-to-do-after-an-
+[120] interview
+[ 38] 33. B
+[ 64] Isaac’s mistake will be discovered and the project will miss its deadline. Transparent and honest
+[ 64] communication can be difficult, but one of its benefits is that it can help resolve mistakes and conflicts. If Isaac
+[ 64] hides his mistake and lets the project fall behind, it is likely that his mistake, as well as the fact that he hid it
+[ 64] from his manager, will come to light. Isaac’s manager will likely notice the project is behind schedule and will
+[ 64] not ignore it, but Isaac cannot rely on his manager simply fixing everything without any other consequences.
+[ 64] SOURCE: EI:129 Foster open, honest communication
+[ 64] SOURCE: LAP-EI-129—Can We Talk? (Fostering Open, Honest Communication)
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 26 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [548] 8
+[ 38] 34. C
+[ 64] Society and culture. Society is transforming at a rapid rate—some say faster than ever before. Successful
+[ 64] businesses stay on top of changes in society and culture so that they can remain sensitive to customer needs
+[ 64] and wants. Customers becoming increasingly concerned about sustainability and wanting to support values-
+[ 64] aligned businesses is an example of a social trend in environmental scanning. Demographics are the physical
+[ 64] and social characteristics of the population. An environmental scan may gather information on competition in a
+[ 64] few different categories, such as brand competition, substitute products, or general competition. Economic
+[ 64] factors that businesses should pay attention to during an environmental scan include inflation, unemployment
+[ 64] rates, and interest rates. This scenario does not fall under demographics, competition, or the economy.
+[ 64] SOURCE: NF:015 Conduct an environmental scan to obtain business information
+[ 64] SOURCE: LAP-NF-015—Get the 4-1-1 (Conducting an Environmental Scan)
+[ 38] 35. C
+[ 64] Implementing a clear desk policy. A clear desk policy ensures that sensitive information is secured in locked
+[ 64] storage, reducing the risk of unauthorized access or theft. Limiting the distribution of physical keys is a
+[ 64] standard security measure. Widespread access increases the risk of lost keys or internal theft. Leaving
+[ 64] computer monitors on can expose data to unauthorized users. Backup media contains critical business data
+[ 64] and must be stored in a secure location.
+[ 64] SOURCE: OP:013 Explain routine security precautions
+[ 64] SOURCE: American Alarm. (2025, March 13). Five best practices to secure your business during off-hours.
+[120] Retrieved February 2, 2026, from https://www.americanalarm.com/blog/five-best-practices-to-
+[120] secure-your-business-during-off-hours-027515
+[ 38] 36. A
+[ 64] “It should arrive by the 21st. I will email you with any updates.” Courteous, efficient responses to customers’
+[ 64] questions indicate that you have a customer service mindset. This response best indicates you have a
+[ 64] customer service mindset because not only is it both courteous and efficient, but it also communicates that you
+[ 64] are knowledgeable and willing to support them until their needs are met. The other responses are not very
+[ 64] efficient or courteous, and they communicate a lack of knowledge.
+[ 64] SOURCE: CR:004 Demonstrate a customer service mindset
+[ 64] SOURCE: LAP-CR-004—Set Your Mind to It (Customer Service Mindset)
+[ 38] 37. C
+[ 64] A reputation for leadership. Serving as an inspiration for others can help solidify your reputation as a leader.
+[ 64] When you inspire others, people will begin to recognize you as someone to look to for guidance and support –
+[ 64] in other words, as a leader. Inspiring others does not guarantee career success or an immediate salary raise,
+[ 64] but it can help you obtain new opportunities. Inspiring others does not result in fewer responsibilities at work.
+[ 64] SOURCE: EI:133 Inspire others
+[ 64] SOURCE: LAP-EI-133—A Force for Good (Inspiring Others)
+[ 38] 38. B
+[ 64] Suspicious. A suspicious customer doubts or questions everything and may want facts and proof before being
+[ 64] convinced something is true. An argumentative customer seems to disagree, question, or look for errors in
+[ 64] almost everything and everybody. An insulting customer intentionally makes unpleasant remarks or uses foul
+[ 64] language. A slow/methodical customer requires a lot of time to make a purchase because of indecisiveness.
+[ 64] SOURCE: CR:009 Handle difficult customers
+[ 64] SOURCE: LAP-CR-009—Making Mad Glad (Handling Difficult Customers)
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 27 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [548] 9
+[ 38] 39. B
+[ 64] Implement a schedule for regular password updates. Updating passwords regularly minimizes the risk of
+[ 64] unauthorized access. Password recycling is a major security flaw. If one account is compromised, every other
+[ 64] account using that password becomes vulnerable. Multi-factor authentication provides a critical second layer of
+[ 64] security that prevents hackers from accessing accounts with only a stolen password. Disabling it would be
+[ 64] unwise. Storing account credentials in a shared document makes login credentials easily accessible to
+[ 64] whoever has access to the document.
+[ 64] SOURCE: FI:830 Manage online accounts
+[ 64] SOURCE: General Electric Credit Union. (2026). Essential tips for managing your business checking
+[120] account. Retrieved January 28, 2026, from
+[120] https://www.gecreditunion.org/learn/education/resources/money-minutes/january-2024/essential-
+[120] tips-for-managing-your-business-checking-account
+[ 38] 40. A
+[ 64] Operations. Operations management focuses on planning, organizing, coordinating, and controlling the
+[ 64] resources needed to produce or provide a business’s goods or services. Quality control falls under this
+[ 64] category. Human resources management focuses on the staffing activities that involve planning, recruitment,
+[ 64] selection, orientation, and training. General management are employees who have supervisory responsibilities
+[ 64] and make decisions. Finally, business information management is an umbrella term that covers careers that
+[ 64] provide a bridge between business processes or initiatives and IT.
+[ 64] SOURCE: PD:025 Explain employment opportunities in business
+[ 64] SOURCE: LAP-PD-025—Go for It! (Careers in Business)
+[ 38] 41. D
+[ 64] Three-point estimating. Three-point estimating is a technique that considers the ways uncertainty and risk can
+[ 64] affect estimates. It finds the average between the most likely, the worst-case, and the best-case scenarios.
+[ 64] Bottom-up estimating is a method of estimating resources by adding up estimates for smaller components of
+[ 64] the project. Short-range forecasting is a sales forecasting technique that predicts sales for periods of less than
+[ 64] three months; it is used to aid in day-to-day decision-making regarding planning, scheduling, staffing, inventory,
+[ 64] etc. There is no indication that Ellison used previous experience to assess the project’s human resource needs.
+[ 64] SOURCE: OP:003 Identify resources needed for project
+[ 64] SOURCE: LAP-OP-003—Get What You Need (Identifying Project Resources)
+[ 38] 42. B
+[ 64] Risk management tool. Insurance is based on the principle of risk transfer: the policyholder pays a premium to
+[ 64] an insurance company, which then agrees to compensate the policyholder for specific financial losses. The
+[ 64] primary purpose of insurance is risk protection. It is not a savings plan. An investment strategy is a customized
+[ 64] plan that guides an investor’s financial decisions. A government mandate is a regulatory requirement unrelated
+[ 64] to transferring risk through insurance policies.
+[ 64] SOURCE: FI:081 Describe the concept of insurance
+[ 64] SOURCE: Kagan, J. (2025, December 29). What is insurance? Retrieved January 28, 2026, from
+[120] https://www.investopedia.com/terms/i/insurance.asp
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 28 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 10
+[ 38] 43. C
+[ 64] Functional. A functional organizational design consists of traditional departments with specialized
+[ 64] responsibilities like sales, marketing, and legal matters. It is ideal for small companies with stable demand for a
+[ 64] small line of products. It also works well with specialized employees, making it a great choice for Liv’s
+[ 64] Linoleum. A divisional structure is more dynamic, and useful for complex or fast-paced business environments.
+[ 64] A matrix structure is a combination of divisional and functional structures and is more suitable for companies
+[ 64] with large, complex projects. Lateral relations refers to the amount of teamwork found in an organizational
+[ 64] design, not a design itself.
+[ 64] SOURCE: EC:103 Explain the organizational design of businesses
+[ 64] SOURCE: LAP-EC-103—Designed to Work (Organizational Design of Businesses)
+[ 38] 44. D
+[ 64] Sales tend to rise as social media engagement increases. A positive correlation indicates that two variables
+[ 64] move in the same direction, but it does not inherently prove that one causes the other. Correlation does not
+[ 64] imply absolute certainty or a guarantee of future performance. The statement that low social media
+[ 64] engagement is the direct cause of poor sales assumes a causal relationship that might not exist. The marketing
+[ 64] team’s findings only describe a relationship between engagement and sales. It does not compare the
+[ 64] effectiveness of social media to other marketing tools.
+[ 64] SOURCE: NF:093 Interpret statistical findings
+[ 64] SOURCE: Korem, A. (2025, August 7). A comprehensive guide to statistical significance. Retrieved February
+[120] 2, 2026, from https://www.statsig.com/perspectives/a-comprehensive-guide-to-statistical-
+[120] significance
+[ 38] 45. A
+[ 64] The damage to the brand’s integrity permanently eroded public trust. The damage that a scandal causes to a
+[ 64] company’s reputation and integrity can long outlive the scandal itself. One major scandal is sometimes enough
+[ 64] to cause permanent damage to a company’s prospects. There is no indication that the company faced criminal
+[ 64] prosecution or that the costs of a severance package were burdensome. A company would not likely use its
+[ 64] research and development budget to pay for legal costs.
+[ 64] SOURCE: EC:106 Explain the nature of business ethics
+[ 64] SOURCE: LAP-EC-106—On the Up and Up (Business Ethics)
+[ 38] 46. A
+[ 64] There must be an offer, an acceptance, and an exchange of value. The fundamental pillars of a contract
+[ 64] include a clear offer, an acceptance, and consideration, meaning each party must provide something of value
+[ 64] to the other. Most business contracts do not require a judge to be present to be valid. The legal age to enter
+[ 64] most contracts is 18, not 21, in most jurisdictions. There is no legal requirement regarding the specific type of
+[ 64] paper used for a contract. Contracts can be written on plain paper or, in some cases, agreed upon orally.
+[ 64] SOURCE: BL:002 Describe the nature of legally binding contracts
+[ 64] SOURCE: Stim, R. (2024, July 25). What is a contract? Retrieved January 27, 2026, from
+[120] https://www.nolo.com/legal-encyclopedia/contracts-basics-33367.html
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 29 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [543] 11
+[ 38] 47. A
+[ 64] Correct punctuation and ensure the tone is right. Professional editing and revising standards involve checking
+[ 64] for both technical accuracy and stylistic appropriateness. Ignoring the errors and sending the email immediately
+[ 64] is not only unprofessional but can create misunderstandings. Asking somebody else to write a draft and then
+[ 64] comparing is unnecessary and inefficient. Deleting the draft and trying again the next day creates more work
+[ 64] and delays the recipient from receiving the message.
+[ 64] SOURCE: CO:089 Edit and revise written work consistent with professional standards
+[ 64] SOURCE: American Journal Experts. (2024, June 4). The writing process: Revising, editing, and
+[120] proofreading. Retrieved January 27, 2026, from https://www.aje.com/arc/the-writing-process-
+[120] revising-editing-and-proofreading
+[ 38] 48. A
+[ 64] Start learning more about her company’s products. One way Maki could show initiative is by learning more
+[ 64] about her company’s products, as this would demonstrate her interest in going beyond her job requirements.
+[ 64] Improvising customer calls, attending meetings without an invitation, and skipping calls with clients may be
+[ 64] seen as disrespectful, lazy, or insubordinate.
+[ 64] SOURCE: EI:024 Explain the importance of demonstrating initiative
+[ 64] SOURCE: LAP-EI-024—Hustle! (Taking Initiative)
+[ 38] 49. A
+[ 64] Budget should be reevaluated. Project budgets should regularly be reevaluated to be as accurate as possible.
+[ 64] A project going over budget is a sign that the budget should be reassessed. Projects often go over budget, so
+[ 64] cancelling a project for this reason would be extreme. Similarly, going over budget does not mean a project will
+[ 64] fail. The budget cannot remain the same because the project has already used up all its money.
+[ 64] SOURCE: FI:106 Describe the nature of budgets
+[ 64] SOURCE: LAP-FI-106—Money Tracks (Nature of Budgets)
+[ 38] 50. A
+[ 64] A leader abusing their power. A leader that abuses their power brings down morale by causing followers to feel
+[ 64] anxious and intimidated. This can lead to higher turnover in workplaces, since employees are unlikely to
+[ 64] remain at a company where they feel threatened or disrespected. Productivity is also harmed when leaders
+[ 64] abuse their power—because followers lose their motivation and inspiration to do good work. Lowered morale,
+[ 64] high turnover, and decreased productivity are not necessarily results of the hiring of a new CEO, giving
+[ 64] employees paid vacation, or hosting social events at work.
+[ 64] SOURCE: EI:135 Use power appropriately
+[ 64] SOURCE: LAP-EI-135—Power Play (Use Power Appropriately)
+[ 38] 51. B
+[ 64] Multi-directional. Staff communication is inherently multi-directional, serving functional purposes like
+[ 64] coordination as well as social purposes like team building. Staff communication is not a one-way process.
+[ 64] While informal communication exists, staff communication primarily encompasses the professional exchange of
+[ 64] information necessary for business operations. Communication is a continuous, daily requirement for business
+[ 64] success, not an annual event.
+[ 64] SOURCE: CO:014 Explain the nature of staff communication
+[ 64] SOURCE: Indeed. (2025, November 27). What are staff communications (Types and importance). Retrieved
+[120] January 27, 2026, from https://uk.indeed.com/career-advice/career-development/staff-
+[120] communications
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 30 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 12
+[ 38] 52. D
+[ 64] Evaluating. Interpreting or evaluating information without bias is a central tenet of ethical information
+[ 64] management. One type of bias businesses must watch out for is confirmation bias. Confirmation bias is the
+[ 64] tendency to agree with information or ideas that support one’s preexisting beliefs. A company like NearDesk
+[ 64] might ignore data that contradict its perspectives or prop up questionable data that support them. Maintaining
+[ 64] information refers to storing information in a safe and responsible manner. Accessing information refers to
+[ 64] collecting information without violating user privacy. Disseminating information refers to sharing data fairly and
+[ 64] sensibly. NearDesk is not experiencing a challenge related to maintaining, accessing, or disseminating
+[ 64] information.
+[ 64] SOURCE: NF:111 Explain the role of ethics in information management
+[ 64] SOURCE: LAP-NF-111—FYI (Ethics in Information Management)
+[ 38] 53. C
+[ 64] Analyze company financial reports. In preparation for a bargaining session, union representatives are likely to
+[ 64] gather research that will inform and support their position. To determine if a company can afford to increase
+[ 64] wages, Luna may wish to analyze its finances. Safety complaints may be part of a bargaining session but do
+[ 64] not directly relate to wages. Similarly, records of disciplinary action will not help Luna bargain for higher wages.
+[ 64] Highly paid employees are less likely to care about getting higher wages, and data from these surveys would
+[ 64] not represent the average worker.
+[ 64] SOURCE: EC:015 Explain the concept of organized labor and business
+[ 64] SOURCE: LAP-EC-915—Get United (Organized Labor)
+[ 38] 54. C
+[ 64] Hazard; risk. A wet floor in a busy hallway is best described as a hazard, while the likelihood that a customer or
+[ 64] employee will slip and get injured is a risk. A hazard is a potential source of harm or danger (e.g., chemicals,
+[ 64] viruses, spills, power tools), while a risk is the chance or likelihood that someone could be hurt or injured from
+[ 64] the hazard. An accident is an unplanned event that leads to harm. While an accident can occur due to a slip,
+[ 64] the wet floor itself is not an accident. Personal protective equipment is used to prevent injury and includes
+[ 64] helmets, safety goggles, masks, etc.
+[ 64] SOURCE: OP:004 Describe health and safety regulations in business
+[ 64] SOURCE: HASpod. (2025, June 25). The difference between hazard and risk explained. Retrieved March 11,
+[120] 2026, from https://www.haspod.com/blog/management/difference-between-hazard-risk-explained
+[ 38] 55. B
+[ 64] The nature of her business operations and the impact of specific risks. Identifying insurance needs requires an
+[ 64] analysis of the specific risks associated with the business type and the financial severity of those potential
+[ 64] losses. While experience is valuable for management, it does not dictate the types of coverage required to
+[ 64] protect assets or mitigate legal liabilities. A marketing budget reflects growth strategy and spending, not the
+[ 64] underlying risks that require financial protection through insurance policies. Employee credit scores are
+[ 64] generally irrelevant to determining the business’s need for coverage.
+[ 64] SOURCE: FI:571 Determine insurance needs
+[ 64] SOURCE: Kagan, J. (2025, December 29). What is insurance? Retrieved January 28, 2026, from
+[120] https://www.investopedia.com/terms/i/insurance.asp
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 31 (612x792) =====
+[ 39] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 13
+[ 38] 56. D
+[ 64] A peer-reviewed journal article from a professional database. Peer-reviewed journals undergo rigorous
+[ 64] evaluation by industry experts, ensuring the information is fact-checked, credible, and academically sound.
+[ 64] Social media posts often prioritize engagement over accuracy and may contain personal bias or unverified
+[ 64] claims. Personal blogs are subjective and may be influenced by the author’s personal experiences or
+[ 64] grievances rather than objective data. Wiki pages that allow public edits lack accountability and can be
+[ 64] changed by anyone, making the validity and timeliness of the information unreliable for business decisions.
+[ 64] SOURCE: CO:054 Identify sources that provide relevant, valid written material
+[ 64] SOURCE: Purdue University. (2025). Evaluating sources: General guidelines. Retrieved January 28, 2026,
+[120] from
+[120] https://owl.purdue.edu/owl/research_and_citation/conducting_research/evaluating_sources_of_inf
+[120] ormation/general_guidelines.html
+[ 38] 57. D
+[ 64] Database management system. A database management system is specifically designed to store data in a way
+[ 64] that allows for use by multiple departments. Word processors are designed for document creation, making
+[ 64] them inefficient for referencing large sets of data. Cloud drives store files like PDFs or images. They do not
+[ 64] inherently provide the data organization found in a database. Presentation software is intended for displaying
+[ 64] information to an audience, not for long-term data storage.
+[ 64] SOURCE: NF:081 Store information for future use
+[ 64] SOURCE: Salesforce. (2026). 7 best practices for successful data management. Retrieved February 2, 2026,
+[120] from https://www.tableau.com/learn/articles/data-management-best-practices
+[ 38] 58. D
+[ 64] Association rule mining. Association rule mining identifies relationships or co-occurrences between variables in
+[ 64] large datasets; it is frequently used in market basket analysis to see which products are bought together.
+[ 64] Classification mining assigns items into predefined categories or classes based on historical data. Clustering
+[ 64] mining groups data points together based on similarities without using predefined labels or rules. Regression
+[ 64] mining is a statistical technique used to predict a continuous numerical value based on the relationship
+[ 64] between variables.
+[ 64] SOURCE: NF:151 Demonstrate basic data mining techniques
+[ 64] SOURCE: Uniyal, M. (2025, January 27). Association rule mining. Retrieved February 2, 2026, from
+[120] https://www.appliedaicourse.com/blog/association-rule-mining/
+[ 38] 59. C
+[ 64] Chronological. Chronological organization arranges information in the order of events. For a project launch, this
+[ 64] allows team members to see the progression of tasks over time. Alphabetical order is useful for indexing, but it
+[ 64] would scramble the logic of a timeline based on the names of tasks. Geographical organization is based on
+[ 64] physical location and does not help communicate a sequence of events. The deductive method is used to
+[ 64] present a main conclusion followed by supporting details, which is effective for reports but less effective for
+[ 64] illustrating a step-by-step schedule.
+[ 64] SOURCE: CO:086 Organize information
+[ 64] SOURCE: Indeed. (2025, December 11). How to create an effective product launch timeline (with steps).
+[120] Retrieved January 27, 2026, from https://www.indeed.com/career-advice/career-
+[120] development/product-launch-timeline
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 32 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 14
+[ 38] 60. A
+[ 64] More than if she paid her statement in full. Paying a credit card statement down via minimums generally
+[ 64] increases the total amount owed by a percentage rate such as APR. Reagan will therefore end up paying more
+[ 64] than she would have if she paid the statement in full.
+[ 64] SOURCE: FI:002 Explain the purposes and importance of credit
+[ 64] SOURCE: LAP-FI-002—Give Credit Where Credit Is Due (Credit and Its Importance)
+[ 38] 61. C
+[ 64] Recruiting and selecting new employees. HR managers recruit, interview, and select employees to make sure
+[ 64] the organization has qualified people in appropriate roles. Managing the company’s finances is a financial
+[ 64] activity. Advertising the company’s products is a marketing activity. While administering compensation and
+[ 64] benefits is a key HR function for attracting and retaining talent, it is not the direct activity responsible for initially
+[ 64] matching a person’s skills and potential to a specific job opening. That function is handled by recruiting and
+[ 64] selection (staffing).
+[ 64] SOURCE: HR:410 Discuss the nature of human resources management
+[ 64] SOURCE: LAP-HR-410—People Pusher (Nature of Human Resources Management)
+[ 38] 62. B
+[ 64] The bowling alley’s profit over the past five years. Investors mainly look for a return on their investment, so a
+[ 64] business’s profits over five years gives the most relevant picture of its financial potential. The wages of its
+[ 64] employees are a single cost of business that don’t give a clear picture of the alley’s finances as a whole.
+[ 64] Similarly, visits per member is a single metric of limited importance to investing. The cost of the company
+[ 64] building represents an asset that does not tell an investor much about the success of the business.
+[ 64] SOURCE: FI:579 Describe the need for financial information
+[ 64] SOURCE: LAP-FI-579—By the Numbers (The Need for Financial Information)
+[ 38] 63. C
+[ 64] Because she bypassed the intermediate levels of authority responsible for her department. In business
+[ 64] administration, the chain of command ensures that communication and authority flow through specific levels.
+[ 64] By going straight to the CEO, Maya ignores the managers who are responsible for their daily work. This can
+[ 64] lead to the CEO being overwhelmed with small tasks and the direct managers feeling undermined or out of the
+[ 64] loop regarding their own team’s projects. Employees at all levels are encouraged to be creative; the issue is
+[ 64] how they communicate them. While a CEO has final say on strategies, they hire managers so they don’t have
+[ 64] to make every small departmental decision. Internal ideas can be delivered in a variety of formats. The email
+[ 64] wasn’t the problem—the recipient (the CEO) was.
+[ 64] SOURCE: PD:252 Follow chain of command
+[ 64] SOURCE: LAP-PD-252—Don’t Cheat the Chain (Following Chain of Command)
+[ 38] 64. C
+[ 64] To increase total revenue by 15% through the expansion of online sales by December 31. This goal is SMART
+[ 64] because it identifies a clear target, a method, and a deadline. Becoming the most profitable company in the
+[ 64] local region as quickly as possible is too vague a goal and lacks a specific metric for success or a defined
+[ 64] timeframe. Reducing business expenses by cutting unnecessary costs across all departments, while a good
+[ 64] business practice, states a general intention rather than a goal—it does not specify how much costs should be
+[ 64] cut or by when. Investing a significant portion of monthly profits into the stock market to build a rainy-day fund
+[ 64] describes a financial strategy but lacks the measurable targets and time constraints required for a formal
+[ 64] financial goal.
+[ 64] SOURCE: FI:065 Set financial goals
+[ 64] SOURCE: Martins, J. (2026, January 5). What are SMART goals? Examples and templates. Retrieved
+[120] January 28, 2026, from https://asana.com/resources/smart-goals
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 33 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 15
+[ 38] 65. C
+[ 64] Have a positive attitude and listen to criticism. Receptivity is the trait of open-mindedness, especially to
+[ 64] criticism and feedback. Having a positive attitude and listening to criticism is a clear way to demonstrate
+[ 64] receptivity. Keeping a workspace clean and prioritizing tasks is part of having organizational skills.
+[ 64] Compromising and working with peers demonstrates cooperativeness. Speaking with confidence and authority
+[ 64] demonstrates assertiveness.
+[ 64] SOURCE: EI:018 Identify desirable personality traits important to business
+[ 64] SOURCE: LAP-EI-918—You’ve Got Personality (Personality Traits in Business)
+[ 38] 66. B
+[ 64] Motion. Lean production originated with the car manufacturer Toyota. The foundation of lean is maximizing
+[ 64] customer value while minimizing waste. Waste is anything that doesn’t create value for the customer. Motion
+[ 64] refers to the wear and tear that production puts on both workers and equipment. Employees and machinery
+[ 64] should be preserved from unnecessary work as much as possible. Over-processing refers to putting any more
+[ 64] work or materials into a product than the customer needs; it wastes time and money and does not create any
+[ 64] added value. Waiting refers to having products sitting around waiting to be worked on or sold, which wastes
+[ 64] time and does not add value. Defective products cause companies to waste time fixing them or to lose money
+[ 64] not being able to sell them.
+[ 64] SOURCE: OP:163 Identify quality-control measures
+[ 64] SOURCE: LAP-OP-163—Take Control (Quality-Control Measures)
+[ 38] 67. D
+[ 64] Increasing employee performance. Collaboration between employees can increase performance because each
+[ 64] individual has strengths and weaknesses that contribute to project quality and speed. Collaboration can also
+[ 64] make work more motivating and engaging for employees. In Ron’s case, fostering collaboration among his
+[ 64] team increased the rate at which they completed their tasks. Ron’s team did not increase innovation or lose
+[ 64] speed and efficiency. Assigning tasks to pairs of engineers was a strategy, not a punishment.
+[ 64] SOURCE: EI:130 Collaborate with others
+[ 64] SOURCE: LAP-EI-130—Genius Is a Team Sport (Collaborating With Others)
+[ 38] 68. A
+[ 64] She can reexamine her talents, skills, and desires. A silver lining to unemployment is that it forces laid-off
+[ 64] workers to reexamine their talents, skills, and desires, which may lead to more personal happiness as well as a
+[ 64] better allocation of resources within the economy. Having difficulty paying bills, entering a very competitive job
+[ 64] market, and experiencing self-doubt are all negative consequences of unemployment.
+[ 64] SOURCE: EC:082 Discuss the impact of a nation's unemployment rates
+[ 64] SOURCE: LAP-EC-082—Help Wanted (Impact of Unemployment Rates)
+[ 38] 69. B
+[ 64] Trade secret. A trade secret consists of confidential business information that provides an edge over
+[ 64] competitors and is protected through internal security measures rather than government registration. A patent
+[ 64] requires the inventor to publicly disclose the details of the invention in exchange for exclusive rights for a
+[ 64] limited time. Trademarks protect brand identifiers like logos, names, and slogans, but not source code. While
+[ 64] copyright protects the expression of code, it does not protect the underlying secrets if the company’s primary
+[ 64] strategy is to keep the information hidden from the public.
+[ 64] SOURCE: BL:051 Describe methods used to protect intellectual property
+[ 64] SOURCE: Moore, S. (2024, June 27). How to protect your intellectual property. Retrieved January 27, 2026,
+[120] from https://www.forbes.com/sites/schuylermoore/2024/06/27/how-to-protect-your-intellectual-
+[120] property/
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 34 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 16
+[ 38] 70. A
+[ 64] It is not measurable, making it impossible to track progress. For a goal to function properly, it must be
+[ 64] measurable. Phrases like “much better” or “improved” are subjective—everyone has a different opinion on what
+[ 64] better looks like. An effective version of this goal would include a metric, such as increasing customer
+[ 64] satisfaction survey scores from 80% to 90% by the end of the quarter. It’s impossible to judge if it’s too
+[ 64] challenging or easy because the goal is too vague to define the work required. Customer service goals are
+[ 64] essential business goals. High-quality service usually leads to higher long-term profits. This is a business goal
+[ 64] because it involves the team and customer service, which are organizational elements.
+[ 64] SOURCE: PD:254 Determine the nature of organizational goals
+[ 64] SOURCE: Indeed. (2025, November 19). What are organizational goals? (And why they are important).
+[120] Retrieved February 4, 2026, from https://ca.indeed.com/career-advice/career-
+[120] development/organizational-goals
+[ 38] 71. A
+[ 64] Mutual funds. A mutual fund is a combination of stocks that can provide great returns in exchange for some
+[ 64] risk. Additionally, it usually involves a fund manager who decides on the stocks in the fund, offloading much of
+[ 64] the decision making from the investor. This is perfect for Katrina since she can tolerate some risk but doesn’t
+[ 64] want to make all the decisions for her portfolio. Trading stocks is generally very risky without professional help
+[ 64] and relies on the knowledge and decisions of the investor. Money market accounts are low-risk, low-reward
+[ 64] investments. Collectibles are highly risky and would rely fully on Katrina’s decisions.
+[ 64] SOURCE: FI:077 Explain types of investments
+[ 64] SOURCE: LAP-FI-077—Invest for Success (Types of Investments)
+[ 38] 72. B
+[ 64] He works best with people and activity. It is important to be able to identify your personal strengths and
+[ 64] weaknesses. In Yamato’s case, that fact that he enjoys work and feels better on days where he interacts with
+[ 64] many people is an indicator that working collaboratively is one of his strengths. Yamato does not particularly
+[ 64] enjoy solitary work, so he does not work best alone. Finding a job boring is an indication that it is not the best fit
+[ 64] for Yamato’s strengths, not that he is lazy.
+[ 64] SOURCE: EI:002 Assess personal strengths and weaknesses
+[ 64] SOURCE: LAP-EI-902—Assess for Success (Assessing Personal Strengths and Weaknesses)
+[ 38] 73. D
+[ 64] Aligning their behaviors with their values. A person is more likely to be fulfilled if they align their behaviors with
+[ 64] their values. In Yuna’s case, working for an animal care center aligns with her value of caring for and protecting
+[ 64] animals. Yuna has not misaligned her behaviors and values. There is no indication Yuna’s values changed
+[ 64] because of her behavior, and she has not changed her values or behaviors.
+[ 64] SOURCE: EI:126 Assess personal behavior and values
+[ 64] SOURCE: LAP-EI-126—Assess Yourself (Assessing Your Personal Behavior and Values)
+[ 38] 74. A
+[ 64] Treat his employees with respect from the beginning. If you want to be respected, you have to respect others.
+[ 64] This is especially important when making first impressions with employees. Lars will gain respect if he treats
+[ 64] his employees respectfully and fairly. Treating his employees poorly, punishing them, or letting them do
+[ 64] whatever they want will cause them to lose respect for him, not gain it.
+[ 64] SOURCE: EI:021 Demonstrate responsible behavior
+[ 64] SOURCE: LAP-EI-021—Make the Honor Role (Acting Responsibly)
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 35 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 17
+[ 38] 75. B
+[ 64] It is produced by a neutral party with less incentive to bias the data. A key part of evaluating sources is
+[ 64] identifying bias. Independent or government sources typically lack the conflict of interest that a report from a
+[ 64] company within the relevant industry may have. The visual presentation of a report does not determine the
+[ 64] underlying objectivity of the data provided. While industry insiders have experience, they can also select data
+[ 64] that favor their own products. Material created specifically to promote a point of view is inherently biased and,
+[ 64] therefore, less reliable for an objective evaluation of a general market.
+[ 64] SOURCE: NF:079 Evaluate quality and source of information
+[ 64] SOURCE: Purdue University. (2025). Evaluating sources: Introduction. Retrieved January 28, 2026, from
+[120] https://owl.purdue.edu/owl/research_and_citation/conducting_research/evaluating_sources_of_inf
+[120] ormation/index.html
+[ 38] 76. C
+[ 64] Positioning. Positioning innovation occurs when the purpose of a product is changed. The product itself
+[ 64] remains the same, but it is marketed differently. Focusing on the customer’s perception of the products
+[ 64] becomes the new goal. Paradigm innovation involves changing the entire institution or industry of the product,
+[ 64] such as the shift in personal computers from when they were only in labs to being in every home office.
+[ 64] Process innovation would be altering how the product is created, and product innovation involves the actual
+[ 64] creation of an original product.
+[ 64] SOURCE: PD:126 Explain the need for innovation skills
+[ 64] SOURCE: LAP-PD-126—Ideas in Action (Innovation Skills)
+[ 38] 77. D
+[ 64] A policy requiring manager approval for print jobs exceeding 20 pages. This policy addresses the company’s
+[ 64] limited budget by creating a procedure that decreases the frequency of printer ink replacements, saving the
+[ 64] company money. A procedure requiring employees to print all internal memos in color would only increase the
+[ 64] frequency of printer ink replacements and cost the company more money. While removing all printers from the
+[ 64] office would save the company money, it is unrealistic. Allowing unlimited personal use of office printers would
+[ 64] only increase the frequency of printer ink replacements, costing the company more money.
+[ 64] SOURCE: CO:057 Analyze company resources to ascertain policies and procedures
+[ 64] SOURCE: Henry, K. (2025, March 11). Purpose of policies and procedures in the workplace. Retrieved
+[120] January 27, 2026, from https://www.accountablehq.com/post/purpose-of-policies-and-procedures-
+[120] in-the-workplace
+[ 38] 78. A
+[ 64] Unlimited liability. In a sole proprietorship, the business owner is ultimately responsible for the business’s debts
+[ 64] and payments. This is known as unlimited liability. Combining capital with another owner is a characteristic of a
+[ 64] partnership. Funding through the stock market is a characteristic of corporations. Limited liability is a
+[ 64] characteristic of corporations and limited liability companies (LLCs).
+[ 64] SOURCE: BL:003 Explain types of business ownership
+[ 64] SOURCE: LAP-BL-003—Own It Your Way (Types of Business Ownership)
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 36 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 18
+[ 38] 79. A
+[ 64] It sends a message about your professionalism before you speak. Personal appearance is a powerful,
+[ 64] nonverbal cue. In business, your image communicates your attention to detail, your understanding of company
+[ 64] culture, and your level of respect for the person you are meeting. Appearance complements speech: it doesn’t
+[ 64] replace it. You still need strong verbal communication skills to succeed, so it doesn’t allow you to avoid
+[ 64] speaking with customers. It is an overgeneralization that personal appearance is the only factor used to
+[ 64] determine if you are a good worker. While appearance is important for first impressions, employers also look at
+[ 64] skills, experience, and character. Finally, it doesn’t prove you have money to have a clean and appropriate
+[ 64] personal appearance. This is because professionalism isn’t about how expensive your clothes are; it’s about
+[ 64] being neat, clean, and appropriate for the specific work environment.
+[ 64] SOURCE: PD:002 Maintain appropriate personal appearance
+[ 64] SOURCE: LAP-PD-002—Look Good, Feel Good (Personal Appearance)
+[ 38] 80. A
+[ 64] Democratic. Yolanda practices a democratic management style by prioritizing input from her employees.
+[ 64] Authoritarian or autocratic management would be characterized by tight control over Yolanda’s employees with
+[ 64] minimal input. Laissez-faire management would mean Yolanda abdicates most or all decision making to the
+[ 64] group.
+[ 64] SOURCE: EI:037 Foster positive working relationships
+[ 64] SOURCE: LAP-EI-037—Can You Relate? (Fostering Positive Working Relationships)
+[ 38] 81. C
+[ 64] $120,000. To calculate a business’s taxable income, subtract its deductions from its revenue. Deductions
+[ 64] include business expenses such as food and drinks, employee wages and bonuses, and marketing expenses.
+[ 64] Adding these values together, we have ($300,000 + $250,000 + $30,000 = $580,000) in tax deductions.
+[ 64] Subtracting this from the total revenue, we get ($700,000 - $580,000 = $120,000) in taxable income.
+[ 64] SOURCE: EC:072 Describe the nature of taxes
+[ 64] SOURCE: LAP-EC-072—Pay Your Share (Business Taxes)
+[ 38] 82. B
+[ 64] By bringing on members who share those traits. Employees make or break organizational culture, so the
+[ 64] employees that Riss brings onto her team will have a massive impact on its culture. Telling or forcing her
+[ 64] employees to act in line with her desired culture is unlikely to work in the long run. Bringing on members who
+[ 64] do not share Riss’ desired traits would work against her goal.
+[ 64] SOURCE: EI:064 Explain the nature of organizational culture
+[ 64] SOURCE: LAP-EI-064—Culture Club (The Nature of Organizational Culture)
+[ 38] 83. A
+[ 64] Greater support from customers. Customers are often more willing and motivated to support businesses they
+[ 64] see as ethical. Since Aldin is choosing to avoid AI-generated art, customers who consider AI art unethical are
+[ 64] more likely to support him. Using human-made art is likely to increase production costs, decrease risk of legal
+[ 64] problems, and increase customer trust.
+[ 64] SOURCE: EN:044 Describe the use of business ethics in entrepreneurship
+[ 64] SOURCE: LAP-EN-044—Ethical Excellence (Ethics in Entrepreneurship)
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 37 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 19
+[ 38] 84. B
+[ 64] “How will the success of this launch be measured?” A relevant question directly relates to the topic at hand and
+[ 64] seeks information that helps the team understand goals, expectations, or processes. Knowing who oversaw
+[ 64] product development 10 years ago is not relevant to the company’s current launch. Insurance-related
+[ 64] questions should be directed to the human resources department, not asked during a meeting about a product
+[ 64] launch. Asking about the upcoming holiday party is off topic for a meeting focused on a product launch.
+[ 64] SOURCE: CO:058 Ask relevant questions
+[ 64] SOURCE: Shah, S. (2022, September 19). How to ask (the right) questions at work. Retrieved January 27,
+[120] 2026, from https://www.atlassian.com/blog/loom/ask-questions-at-work
+[ 38] 85. B
+[ 64] Their unethical behavior may hurt Marlin’s reputation. In the workplace and in life, a person’s reputation is
+[ 64] affected by those they associate with. Marlin’s association with a group of unethical coworkers is likely to come
+[ 64] back to him and undermine his attempts at making friends and creating goodwill. Spending time with unethical
+[ 64] coworkers is not likely to lead to promotions. It is not likely that Marlin will change their behavior. Marlin is not
+[ 64] likely to be blamed for the group’s unethical behavior, though he may become associated with it.
+[ 64] SOURCE: EI:004 Demonstrate ethical work habits
+[ 64] SOURCE: LAP-EI-004—Work Right (Demonstrating Ethical Work Habits)
+[ 38] 86. B
+[ 64] Mixed. Mixed economies take aspects of both socialist and market economies, generally having a mix of public
+[ 64] and private ownership of the means of production. A market economy is one in which government’s role in
+[ 64] production and distribution is very limited. Traditional economies rely on bartering and trading rather than public
+[ 64] and private sectors. Communist economies have a minimal or nonexistent private sector.
+[ 64] SOURCE: EC:007 Explain the types of economic systems
+[ 64] SOURCE: LAP-EC-907—Who’s the Boss? (Economic Systems)
+[ 38] 87. D
+[ 64] Moving the impact of risk to someone else. Transference involves moving the impact of a risk to someone or
+[ 64] something else and is often used when the impact is measurable in dollars and cents. Common transference
+[ 64] devices include insurance, contracts, warranties, and guarantees. Four common risk responses include
+[ 64] transference, avoidance, mitigation, and acceptance. A business choosing not to do something risky describes
+[ 64] avoidance. A business reducing or controlling a risk's impact describes mitigation. A business accepting a risk's
+[ 64] consequences describes acceptance.
+[ 64] SOURCE: SM:075 Explain the nature of risk management
+[ 64] SOURCE: LAP-SM-075—Prepare for the Worst; Expect the Best (Nature of Risk Management)
+[ 38] 88. B
+[ 64] Highlight how the product will increase the retailer’s sales. Effective business persuasion focuses on the
+[ 64] benefits to the receiver rather than the needs of the sender. While information about the product is important,
+[ 64] that alone does not create a compelling enough reason for the reader to act. “Only option” claims can be
+[ 64] perceived as unprofessional and lack the credibility needed for successful persuasion. Business persuasion
+[ 64] should be benefit-driven. Focusing on the sender’s personal financial needs is unprofessional.
+[ 64] SOURCE: CO:031 Write persuasive messages
+[ 64] SOURCE: Indeed. (2025, December 11). 5 persuasive techniques to improve your writing. Retrieved January
+[120] 27, 2026, from https://www.indeed.com/career-advice/career-development/persuasive-techniques-
+[120] to-improve-your-writing
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 38 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 20
+[ 38] 89. C
+[ 64] Due care. Due care refers to professional competence and responsibility. Lana was careless enough the night
+[ 64] before to impair her performance the next day, leading to important accounting errors that could affect the
+[ 64] company as a whole. Lana did not act without integrity, since it was an honest mistake. She did not purposely
+[ 64] act against the public interest and did not take biased actions.
+[ 64] SOURCE: FI:351 Discuss the role of ethics in accounting
+[ 64] SOURCE: LAP-FI-351—With Due Care (The Role of Ethics in Accounting)
+[ 38] 90. B
+[ 64] To regulate the flow of goods across borders. The main purpose of import and export laws in international trade
+[ 64] is to regulate the flow of goods across borders through tariffs, quotas, and safety standards. The purpose of
+[ 64] import and export laws is not to eliminate domestic competition. Currency regulation is a matter of monetary
+[ 64] policy, not import and export laws. The authority to set taxes and trade laws rests solely with governments and
+[ 64] international treaties, not private corporations.
+[ 64] SOURCE: BL:145 Explain the nature of import/export law
+[ 64] SOURCE: U.S. Small Business Administration. (n.d.). Know the import and export laws and regulations.
+[120] Retrieved January 27, 2026, from https://www.sba.gov/business-guide/grow-your-business/export-
+[120] products/international-sales/know-import-export-laws-regulations
+[ 38] 91. B
+[ 64] Project champion. A project’s champion is its sponsor—perhaps a high-ranking person in the business who has
+[ 64] the authority to mobilize the necessary resources to get the project done. The project champion might even be
+[ 64] instrumental in selecting the project manager and promoting the project throughout the company. Though the
+[ 64] project champion may assist the project manager when obstacles arise, they are not necessarily closely
+[ 64] involved in the project. Ashwin is not a project manager, resource manager, or steering committee member.
+[ 64] SOURCE: OP:158 Explain the nature of project management
+[ 64] SOURCE: LAP-OP-158—Projected to Win (Nature of Project Management)
+[ 38] 92. B
+[ 64] Mass. Mass production means producing products in large quantities. It is used in the production of such
+[ 64] outputs as canned goods, vehicles, and household appliances. Many products that are mass produced have
+[ 64] standardized, interchangeable parts. Unit production means producing one item at a time or items in small
+[ 64] quantities; it would be used to produce a custom-tailored suit or clean one customer’s carpet. Batch production
+[ 64] means producing items in specific amounts, or batches, and is often used to meet specific or short-term market
+[ 64] needs. An intermittent production process is one in which production periodically stops and restarts. It can be
+[ 64] used in the production of standard products like tools or custom products like individual insurance policies.
+[ 64] SOURCE: OP:017 Explain the concept of production
+[ 64] SOURCE: LAP-OP-017—Can You Make It? (Nature of Production)
+[ 38] 93. D
+[ 64] Commercial bank. Commercial banks offer a full range of financial services to both individuals and businesses
+[ 64] to generate profit for their shareholders. Credit unions are member-owned cooperatives. While they offer
+[ 64] similar services, their primary goal is to serve their members rather than stockholders. The primary function of
+[ 64] an insurance company is to provide risk management rather than general banking services like checking or
+[ 64] business loans. Brokerage firms focus on facilitating the buying and selling of securities rather than providing
+[ 64] banking services like commercial checking and lending.
+[ 64] SOURCE: FI:075 Describe types of financial-services providers
+[ 64] SOURCE: Kagan, J. (2025, July 18). How do commercial banks work, and why do they matter? Retrieved
+[120] January 28, 2026, from https://www.investopedia.com/terms/c/commercialbank.asp
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 39 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 21
+[ 38] 94. B
+[ 64] It made the customer more comfortable. Manuel used empathy to identify and solve the customer’s problem,
+[ 64] which made them more relaxed and led to a sale. The purpose of empathy is not to gain leverage or take
+[ 64] advantage of vulnerabilities, but to understand and address a customer’s issues. Having empathy does not
+[ 64] give others leverage over Manuel.
+[ 64] SOURCE: EI:030 Show empathy for others
+[ 64] SOURCE: LAP-EI-030—Have a Heart (Showing Empathy for Others)
+[ 38] 95. B
+[ 64] Increased competitiveness in foreign markets. When a currency becomes weaker, it also becomes more
+[ 64] affordable for foreign markets. A weaker U.S. dollar would mean that foreign consumers are more incentivized
+[ 64] to buy U.S. goods, making U.S. businesses more competitive in foreign markets. A weaker dollar is likely to
+[ 64] decrease consumer confidence, not increase. Similarly, a weaker dollar is likely to increase exports and the
+[ 64] cost of living in the U.S., not decrease them.
+[ 64] SOURCE: EC:100 Describe the determinants of exchange rates and their effects on the domestic economy
+[ 64] SOURCE: LAP-EC-100—Get Your Money’s Worth (Exchange Rates)
+[ 38] 96. D
+[ 64] Allocating funds to an emergency fund before committing to capital expenditures. Responsible financial
+[ 64] decision-making involves establishing a reserve to ensure the business can remain operational during
+[ 64] unexpected emergencies. Using high-interest debt for long-term projects is financially irresponsible, as the cost
+[ 64] of borrowing can quickly outweigh the potential returns of the expansion. Prioritizing the purchase of luxury
+[ 64] office decor prioritizes aesthetic appeal over financial stability. Delaying payments to essential vendors is an
+[ 64] unethical practice that damages vendor relationships.
+[ 64] SOURCE: FI:783 Make responsible financial decisions
+[ 64] SOURCE: Smith, L. (2025, April 11). The basics of financial responsibility. Retrieved January 28, 2026, from
+[120] https://www.investopedia.com/articles/pf/09/financial-responsibility.asp
+[ 38] 97. A
+[ 64] Categorizing her tasks by urgency. Prioritizing tasks requires categorizing them by urgency. Evaluating her
+[ 64] tasks based on their relative importance and timing allows Juniper to prioritize efficiently. The difficulty of the
+[ 64] task does not necessarily correlate with its importance; it would be more efficient to categorize them by
+[ 64] urgency before completing any tasks. Rescheduling all upcoming deadlines merely postpones; it does not help
+[ 64] Juniper prioritize. Increasing her daily working hours may help Juniper complete her tasks, but it is not an
+[ 64] effective starting point for prioritizing tasks.
+[ 64] SOURCE: OP:228 Organize and prioritize work
+[ 64] SOURCE: Dumont, M. (2025, December 31). Top time management strategies for financial professionals.
+[120] Retrieved March 11, 2026, from https://www.investopedia.com/articles/financial-careers/08/time-
+[120] management-financial-career.asp
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio
+
+===== PAGE 40 (612x792) =====
+[ 40] 2026 HS ICDC  ||  [180] BUSINESS ADMINISTRATION CORE EXAM—KEY  ||  [542] 22
+[ 38] 98. A
+[ 64] Save time and money. Managing information appropriately is essential for business success. For a business to
+[ 64] run efficiently, information must be managed and organized so it can be found quickly whenever it is needed.
+[ 64] And in business, where time is money, this is cost-effective as well. Information management saves businesses
+[ 64] time and money by controlling information overload, cutting down on enormous paper trails, and maintaining a
+[ 64] higher level of productivity. Because Huda was quickly able to provide Silvester with the contracts, this
+[ 64] demonstrates how effective information management helps save time and money. Huda’s ability to locate the
+[ 64] files did not necessarily help maintain organizational consistency, comply with laws and regulations, or support
+[ 64] decision-making.
+[ 64] SOURCE: NF:110 Discuss the nature of information management
+[ 64] SOURCE: LAP-NF-110—In the Know (Nature of Information Management)
+[ 38] 99. D
+[ 64] Combat job boredom. One disadvantage of job specialization is that it increases boredom on the job, reducing
+[ 64] employee morale. Adrienne is combating this by rotating stations and deepening workers’ understanding of the
+[ 64] job, giving them variety and a deeper connection with their jobs. These practices are unlikely to reduce waste
+[ 64] or increase production speed, as employees learning or adjusting to new stations each week are likely to be
+[ 64] more wasteful and less efficient. Similarly, company profit is unlikely to increase as a direct result of Adrienne’s
+[ 64] practices.
+[ 64] SOURCE: EC:014 Analyze impact of specialization/division of labor on productivity
+[ 64] SOURCE: LAP-EC-914—Divide and Conquer (Specialization and Division of Labor)
+[ 38] 100. B
+[ 64] Read-only. To use today’s information in the future, businesses must have quality records and use an
+[ 64] organized system for recordkeeping, whether they are paper or digital. Reliable records are up to date,
+[ 64] authentic, trustworthy, and usable. They’re error-free when they’re stored, and they’re error-free when they’re
+[ 64] retrieved. By saving digital records in a read-only format, businesses can ensure that their records are tamper-
+[ 64] free, as well. Saving important records as editable files opens them up to potential errors. Encryption prevents
+[ 64] important business records from being read by unauthorized people, but does not prevent accidental deletion
+[ 64] or changes. Compressing business records makes them easier to store, but does not prevent accidental
+[ 64] editing.
+[ 64] SOURCE: NF:001 Describe the nature of business records
+[ 64] SOURCE: LAP-NF-001—Record It (Business Records)
+[140] Copyright © 2026 by MBA Research and Curriculum Center®, Columbus, Ohio

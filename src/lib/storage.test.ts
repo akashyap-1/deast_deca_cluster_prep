@@ -29,7 +29,7 @@ describe('storage', () => {
   it('rejects files that are not progress exports', () => {
     const s = createStore(memoryKV());
     expect(() => s.importJSON('nope')).toThrow(/not valid JSON/);
-    expect(() => s.importJSON('{"foo":1}')).toThrow(/Not a kash2finance/);
+    expect(() => s.importJSON('{"foo":1}')).toThrow(/Not an East DECA Prep/);
     expect(() => s.importJSON('{"app":"kash2finance","version":9,"attempts":[]}')).toThrow(/version/);
   });
 
@@ -41,7 +41,7 @@ describe('storage', () => {
       settings: { dailyGoal: -3, theme: 'purple' },
     });
     expect(st.attempts).toHaveLength(1);
-    expect(st.settings).toEqual({ dailyGoal: 25, theme: 'system', includeFlagged: false });
+    expect(st.settings).toEqual({ dailyGoal: 25, theme: 'dark', includeFlagged: false, showTimer: true });
   });
 
   it('survives corrupted saved data', () => {

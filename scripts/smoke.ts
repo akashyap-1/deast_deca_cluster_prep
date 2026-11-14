@@ -1,10 +1,12 @@
-// End-to-end smoke test: serves dist/ with `vite preview` and drives every page in headless Chromium.
+// End-to-end smoke test: serves dist/ with `vite preview` and drives every page in headless Chromium,
+// signed in against an in-memory fake Supabase (scripts/lib/fake-supabase.ts).
 // Usage: npm run build && npm run smoke   (screenshots go to scratch/shots/)
 /// <reference lib="dom" />
 import fs from 'node:fs';
 import path from 'node:path';
 import { preview } from 'vite';
-import { chromium, type Page } from 'playwright';
+import { chromium } from 'playwright';
+import { FakeSupabase, FAKE_USER } from './lib/fake-supabase.ts';
 
 const root = path.resolve(import.meta.dirname, '..');
 const shots = path.join(root, 'scratch', 'shots');
@@ -26,10 +28,35 @@ async function step(name: string, fn: () => Promise<void>) {
     console.log(`  ✗ ${name}: ${(e as Error).message.split('\n')[0]}`);
   }
 }
-const state = (page: Page) => page.evaluate(() => JSON.parse(localStorage.getItem('kash2finance:v1') ?? '{}'));
+const db = new FakeSupabase();
+/** What the server holds for the test user's Finance progress. */
+async function state(_page?: unknown) {
+  await new Promise((r) => setTimeout(r, 400)); // let the save queue drain
+  const mine = (t: string) => db.rows(t).filter((r) => r.user_id === FAKE_USER.id && r.cluster === 'finance');
+  return {
+    attempts: mine('attempts'),
+    bookmarks: mine('bookmarks').map((b) => b.qid),
+    mocks: mine('mocks'),
+    activeMock: mine('active_mocks')[0] ?? null,
+  };
+}
 
 try {
-  const page = await browser.newPage({ viewport: { width: 1100, height: 900 } });
+  await step('signed out: only the login screen is reachable', async () => {
+    const ctx = await browser.newContext();
+    await new FakeSupabase().attach(ctx, { signedIn: false });
+    const p = await ctx.newPage();
+    await p.goto(base + '#/dashboard');
+    await p.waitForSelector('text=Sign in');
+    if (await p.locator('text=Weakness heatmap').count()) throw new Error('dashboard visible while signed out');
+    await p.fill('input[type=email]', 'someone@gmail.com');
+    await p.waitForSelector('text=Use your @student.dasd.org or @dasd.org address.');
+    await ctx.close();
+  });
+
+  const ctx = await browser.newContext({ viewport: { width: 1100, height: 900 } });
+  await db.attach(ctx);
+  const page = await ctx.newPage();
   page.on('pageerror', (e) => errors.push(e.message));
   page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
   await page.goto(base);
@@ -90,7 +117,7 @@ try {
     await download.saveAs(file);
     const before = (await state(page)).attempts.length;
     await page.fill('input[autocomplete=off]', 'RESET');
-    await page.click('text=Reset all progress');
+    await page.click('text=Reset Finance progress');
     if ((await state(page)).attempts.length !== 0) throw new Error('reset failed');
     page.once('dialog', (d) => d.accept());
     await page.setInputFiles('input[type=file]', file);
@@ -99,12 +126,15 @@ try {
   });
 
   await step('mobile + dark mode layout', async () => {
-    const m = await browser.newPage({ viewport: { width: 390, height: 844 }, colorScheme: 'dark' });
+    const mctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    await db.attach(mctx);
+    const m = await mctx.newPage();
     await m.goto(base);
     await m.waitForSelector('[role=radiogroup]');
+    await m.waitForSelector('text=Session accuracy');
     const dark = await m.evaluate(() => document.documentElement.classList.contains('dark'));
     const overflow = await m.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
-    if (!dark) throw new Error('dark mode not applied');
+    if (!dark) throw new Error('dark mode is not the default');
     if (overflow) throw new Error('horizontal overflow on mobile');
     await m.screenshot({ path: path.join(shots, 'mobile-dark.png') });
   });
