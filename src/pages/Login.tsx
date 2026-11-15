@@ -115,9 +115,13 @@ export function LoginPage() {
             ? 'Open it to confirm your account, then come back here and sign in.'
             : 'Open it to choose a new password.'}
         </p>
-        <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">
-          Nothing after a few minutes? Check spam or quarantine. School email filters sometimes hold messages from new senders.
-        </p>
+        <div className="mt-4 rounded-xl border border-gold-400/60 bg-gold-50 px-4 py-3 text-sm text-slate-800 dark:border-gold-400/40 dark:bg-gold-400/10 dark:text-slate-200">
+          <p className="font-semibold text-slate-900 dark:text-white">Not in your inbox? Check your spam folder.</p>
+          <p className="mt-1">
+            It comes from <span className="font-semibold">East DECA Prep</span> and usually lands in spam the first time. Open it there and
+            mark it <span className="font-semibold">Not spam</span> so future emails reach your inbox.
+          </p>
+        </div>
         {note && <p className="mt-4 text-sm text-emerald-700 dark:text-emerald-300" role="status">{note}</p>}
         {error && <div className="mt-4"><ErrorText>{error}</ErrorText></div>}
         <div className="mt-6 flex flex-wrap items-center gap-4 text-sm">
@@ -170,7 +174,11 @@ export function LoginPage() {
               autoComplete={mode === 'signUp' ? 'new-password' : 'current-password'}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              hint={mode === 'signUp' ? 'At least 8 characters. Don’t reuse your school password.' : undefined}
+              hint={
+                mode === 'signUp'
+                  ? 'At least 8 characters. Don’t reuse your school password. We’ll email you a confirmation link. Check spam if it doesn’t show up.'
+                  : undefined
+              }
               required
             />
             <div className="mt-2 flex items-center justify-between text-sm">
