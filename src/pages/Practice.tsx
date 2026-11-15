@@ -49,6 +49,14 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
   const [sessionStart] = useState(() => Date.now());
   const [tally, setTally] = useState({ answered: 0, correct: 0 });
   const [answeredAt, setAnsweredAt] = useState<number | null>(null);
+  const feedbackRef = useRef<HTMLDivElement>(null);
+  const isPhone = () => window.matchMedia('(max-width: 639.98px)').matches;
+  const smooth = () => (window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth') as ScrollBehavior;
+
+  // On phones the explanation lands below the fold; bring its top into view once it renders.
+  useEffect(() => {
+    if (selected && isPhone()) feedbackRef.current?.scrollIntoView({ behavior: smooth(), block: 'nearest' });
+  }, [selected]);
 
   function next(m: Mode = mode) {
     let q: Question | null;
@@ -66,6 +74,7 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
       ) ?? (fresh.length ? fresh[0] : null);
     }
     if (q) shown.current.add(q.id);
+    if (current && isPhone()) window.scrollTo({ top: 0 });
     setCurrent(q);
     setSelected(null);
     setAnsweredAt(null);
@@ -115,9 +124,9 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
 
   return (
     <div className="space-y-4">
-      <DailyBar>
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <div className="inline-flex rounded-lg bg-slate-100 p-1 dark:bg-slate-800" role="tablist">
+      <DailyBar
+        lead={
+          <div className="inline-flex shrink-0 rounded-lg bg-slate-100 p-1 dark:bg-slate-800" role="tablist" aria-label="Practice mode">
             {(['smart', 'custom'] as const).map((m) => (
               <button
                 key={m}
@@ -135,20 +144,21 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
               </button>
             ))}
           </div>
-          {mode === 'custom' ? (
-            <div className="flex items-center gap-3">
+        }
+      >
+        {mode === 'custom' && (
+          <>
+            <div className="flex items-center justify-between gap-3">
               <span className="text-sm text-slate-600 dark:text-slate-400">
-                <span className="font-semibold text-slate-900 dark:text-slate-100">{pool.length}</span> match
+                <span className="tnum font-semibold text-slate-900 dark:text-slate-100">{pool.length}</span> questions match
               </span>
-              <Button variant="secondary" onClick={() => setShowFilters((v) => !v)} aria-expanded={showFilters}>
+              <Button variant="secondary" onClick={() => setShowFilters((v) => !v)} aria-expanded={showFilters} className="!py-2">
                 Filters{nFilters ? ` (${nFilters})` : ''}
               </Button>
             </div>
-          ) : (
-            <span className="hidden text-xs text-slate-500 sm:inline dark:text-slate-400">Reviews missed questions, then your weakest areas</span>
-          )}
-        </div>
-        {mode === 'custom' && showFilters && <FilterPanel filters={filters} setFilters={setFilters} />}
+            {showFilters && <FilterPanel filters={filters} setFilters={setFilters} />}
+          </>
+        )}
       </DailyBar>
 
       {!current ? (
@@ -161,7 +171,7 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
           </p>
         </Card>
       ) : (
-        <Card>
+        <Card className="max-sm:-mx-4 max-sm:rounded-none max-sm:border-x-0">
           <QuestionView
             question={current}
             selected={selected}
@@ -208,7 +218,9 @@ export function PracticePage({ params }: { params: URLSearchParams }) {
                   Next question <Glyph name="next" />
                 </Button>
               </div>
-              <Feedback question={current} selected={selected} />
+              <div ref={feedbackRef} className="scroll-mb-40 sm:scroll-mb-20">
+                <Feedback question={current} selected={selected} />
+              </div>
             </>
           )}
           {!selected && (
@@ -243,8 +255,8 @@ function ReasonChip({ pick }: { pick: SmartPick }) {
   return <span className={cx('rounded px-1.5 font-semibold', REASON_STYLE[pick.reason])}>{pick.detail}</span>;
 }
 
-/** Today's progress toward the daily goal, the streak, and reviews waiting. */
-export function DailyBar({ children }: { children?: React.ReactNode }) {
+/** Today's progress toward the daily goal, the streak, and reviews waiting. `lead` sits at the start of the row. */
+export function DailyBar({ lead, children }: { lead?: React.ReactNode; children?: React.ReactNode }) {
   const state = useAppState();
   const goal = state.settings.dailyGoal;
   const today = answeredToday(state.attempts);
@@ -255,24 +267,40 @@ export function DailyBar({ children }: { children?: React.ReactNode }) {
   const queue = reviewQueueSize(questions, stats);
   return (
     <Card className="!p-3 sm:!px-5 sm:!py-4">
-      <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm">
-        <span className="font-semibold">Today</span>
-        <ProgressBar value={today} max={goal} className="min-w-24 flex-1" />
-        <span className="tnum text-slate-600 dark:text-slate-300">
-          <span className="font-semibold text-slate-900 dark:text-white">{today}</span> / {goal}
-          {today >= goal && (
-            <span className="ml-1.5 inline-flex items-center gap-0.5 text-emerald-700 dark:text-emerald-400">
-              <Glyph name="check" className="h-3.5 w-3.5" /> goal met
+      <div className="flex items-center gap-4 sm:gap-6">
+        {lead}
+        <div className="min-w-0 flex-1">
+          <div className="flex items-baseline justify-between gap-2 text-xs sm:text-sm">
+            <span className="font-semibold text-slate-700 dark:text-slate-200">Today</span>
+            <span className="tnum text-slate-600 dark:text-slate-300">
+              {today >= goal ? (
+                <span className="inline-flex items-center gap-0.5 font-semibold text-emerald-700 dark:text-emerald-400">
+                  <Glyph name="check" className="h-3.5 w-3.5" /> {today}/{goal}
+                </span>
+              ) : (
+                <>
+                  <span className="font-semibold text-slate-900 dark:text-white">{today}</span>/{goal}
+                </>
+              )}
             </span>
-          )}
-        </span>
-        <span className="flex basis-full gap-5 sm:basis-auto">
+          </div>
+          <ProgressBar value={today} max={goal} className="mt-1.5" />
+        </div>
+        <div className="hidden shrink-0 gap-5 text-sm sm:flex">
           <span className="tnum text-slate-600 dark:text-slate-300" title="Days in a row you met your daily goal">
             <span className="font-semibold text-slate-900 dark:text-white">{streak}</span> day streak
           </span>
           <span className="tnum text-slate-600 dark:text-slate-300" title={`${queue} missed questions are in the review cycle`}>
             <span className="font-semibold text-slate-900 dark:text-white">{due}</span> reviews due
           </span>
+        </div>
+      </div>
+      <div className="tnum mt-2 flex gap-4 text-xs text-slate-600 sm:hidden dark:text-slate-400">
+        <span>
+          <span className="font-semibold text-slate-900 dark:text-white">{streak}</span> day streak
+        </span>
+        <span>
+          <span className="font-semibold text-slate-900 dark:text-white">{due}</span> reviews due
         </span>
       </div>
       {children && <div className="mt-3 border-t border-slate-200 pt-3 dark:border-slate-800">{children}</div>}
@@ -288,7 +316,7 @@ export function BookmarkButton({ on, onClick }: { on: boolean; onClick: () => vo
       aria-pressed={on}
       title={on ? 'Remove bookmark (S)' : 'Bookmark (S)'}
       className={cx(
-        'shrink-0 rounded-lg p-1.5 transition',
+        '-m-1 grid h-10 w-10 shrink-0 place-items-center rounded-lg transition active:bg-slate-100 dark:active:bg-slate-800',
         on ? 'text-amber-500' : 'text-slate-400 hover:text-slate-600 dark:hover:text-slate-200',
       )}
     >
@@ -307,7 +335,7 @@ function ChipToggle({ on, onClick, children }: { on: boolean; onClick: () => voi
       onClick={onClick}
       aria-pressed={on}
       className={cx(
-        'rounded-full border px-3 py-1 text-xs font-medium transition',
+        'rounded-full border px-3 py-1.5 text-xs font-medium transition sm:py-1',
         on
           ? 'border-brand-600 bg-brand-600 text-white'
           : 'border-slate-300 bg-white text-slate-700 hover:border-brand-400 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200',

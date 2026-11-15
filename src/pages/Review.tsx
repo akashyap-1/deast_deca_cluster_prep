@@ -137,14 +137,14 @@ export function ReviewPage({ initial }: { initial?: string | null }) {
         <>
           <Card className="!p-3 sm:!px-5 sm:!py-4">
             <div className="flex flex-wrap items-center gap-3">
-              <div className="inline-flex flex-wrap rounded-lg bg-slate-100 p-1 dark:bg-slate-800" role="tablist" aria-label="Which questions">
+              <div className="grid w-full grid-cols-3 rounded-lg bg-slate-100 p-1 sm:inline-flex sm:w-auto dark:bg-slate-800" role="tablist" aria-label="Which questions">
                 {(
                   [
-                    ['saved', 'Saved', saved.length],
-                    ['learning', 'Still learning', learning.length],
-                    ['all', 'All missed', missed.length],
+                    ['saved', 'Saved', 'Saved', saved.length],
+                    ['learning', 'Still learning', 'Learning', learning.length],
+                    ['all', 'All missed', 'Missed', missed.length],
                   ] as const
-                ).map(([v, label, n]) => (
+                ).map(([v, label, short, n]) => (
                   <button
                     key={v}
                     role="tab"
@@ -155,17 +155,19 @@ export function ReviewPage({ initial }: { initial?: string | null }) {
                       setOpen(null);
                     }}
                     className={cx(
-                      'tnum rounded-md px-3 py-1.5 text-sm font-semibold transition-colors',
+                      'tnum rounded-md px-2 py-2 text-sm font-semibold whitespace-nowrap transition-colors sm:px-3 sm:py-1.5',
                       view === v
                         ? 'bg-white text-slate-900 shadow-sm dark:bg-slate-950 dark:text-white'
                         : 'text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200',
                     )}
                   >
-                    {label} <span className="font-normal text-slate-500 dark:text-slate-400">{n}</span>
+                    <span className="sm:hidden">{short}</span>
+                    <span className="hidden sm:inline">{label}</span>{' '}
+                    <span className="font-normal text-slate-500 dark:text-slate-400">{n}</span>
                   </button>
                 ))}
               </div>
-              <label className="min-w-0 flex-1 sm:flex-none">
+              <label className="w-full min-w-0 sm:w-auto sm:flex-none">
                 <span className="sr-only">Instructional area</span>
                 <select
                   value={area}

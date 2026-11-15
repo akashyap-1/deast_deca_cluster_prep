@@ -14,13 +14,14 @@ import { useAppState } from './lib/storage';
 import { closeSession, openSession, switchCluster, useSaveStatus, useSession } from './lib/sync';
 
 const NAV = [
-  { path: '/practice', label: 'Practice', icon: 'M4 6h16M4 12h10M4 18h7' },
-  { path: '/review', label: 'Review', icon: 'M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z' },
-  { path: '/mock', label: 'Mock exam', icon: 'M12 7v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z' },
-  { path: '/dashboard', label: 'Dashboard', icon: 'M4 20V10M10 20V4M16 20v-7M22 20H2' },
+  { path: '/practice', label: 'Practice', short: 'Practice', icon: 'M4 6h16M4 12h10M4 18h7' },
+  { path: '/review', label: 'Review', short: 'Review', icon: 'M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z' },
+  { path: '/mock', label: 'Mock exam', short: 'Mock', icon: 'M12 7v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z' },
+  { path: '/dashboard', label: 'Dashboard', short: 'Stats', icon: 'M4 20V10M10 20V4M16 20v-7M22 20H2' },
   {
     path: '/settings',
     label: 'Settings',
+    short: 'Settings',
     icon: 'M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z',
   },
 ];
@@ -155,21 +156,21 @@ function Shell({ cluster }: { cluster: string }) {
       </aside>
 
       {/* Mobile top bar */}
-      <header className="sticky top-0 z-20 flex items-center gap-3 bg-brand-900 px-4 py-2.5 text-white lg:hidden dark:bg-brand-950">
+      <header className="mobile-chrome sticky top-0 z-20 flex h-[calc(52px+env(safe-area-inset-top))] items-center gap-3 bg-brand-900 px-4 pt-[env(safe-area-inset-top)] text-white lg:hidden dark:bg-brand-950">
         <button onClick={() => navigate('/practice')} aria-label="East DECA Prep home" className="shrink-0">
           <LogoMark className="h-8 w-auto" />
         </button>
         <ClusterSelect value={cluster} className="min-w-0 flex-1" />
       </header>
 
-      <main key={cluster} className="mx-auto max-w-4xl px-4 pt-5 pb-52 sm:px-6 sm:pb-40 lg:px-10 lg:pt-8 lg:pb-28">
+      <main key={cluster} className="mx-auto max-w-4xl px-4 pt-4 pb-[calc(4.5rem+env(safe-area-inset-bottom))] sm:px-6 sm:pt-6 lg:px-10 lg:pt-8 lg:pb-12">
         {page}
-        <Credit className="mt-12 text-center text-xs leading-relaxed text-slate-500 lg:hidden dark:text-slate-400" />
+        <Credit className="mobile-chrome mt-12 text-center text-xs leading-relaxed text-slate-500 lg:hidden dark:text-slate-400" />
       </main>
 
       {/* Mobile tab bar */}
       <nav
-        className="fixed inset-x-0 bottom-0 z-30 flex border-t border-white/10 bg-brand-900 pb-[env(safe-area-inset-bottom)] lg:hidden dark:bg-brand-950"
+        className="mobile-chrome fixed inset-x-0 bottom-0 z-30 flex border-t border-white/10 bg-brand-900 pb-[env(safe-area-inset-bottom)] lg:hidden dark:bg-brand-950"
         aria-label="Main"
       >
         {NAV.map((n) => (
@@ -178,12 +179,13 @@ function Shell({ cluster }: { cluster: string }) {
             href={`#${n.path}`}
             aria-current={active(n.path) ? 'page' : undefined}
             className={cx(
-              'flex flex-1 flex-col items-center gap-0.5 py-2 text-[0.7rem] font-semibold',
+              'relative flex h-14 flex-1 flex-col items-center justify-center gap-1 text-[0.7rem] font-semibold transition-colors active:bg-white/5',
               active(n.path) ? 'text-gold-400' : 'text-brand-200',
             )}
           >
-            <Icon d={n.icon} />
-            {n.label}
+            {active(n.path) && <span className="absolute top-0 h-0.5 w-8 rounded-b bg-gold-400" aria-hidden="true" />}
+            <Icon d={n.icon} className="h-[22px] w-[22px]" />
+            {n.short}
           </a>
         ))}
       </nav>

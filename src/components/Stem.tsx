@@ -21,13 +21,13 @@ export function Stem({ text }: { text: string }) {
         b.kind === 'text' ? (
           <p key={i}>{b.text}</p>
         ) : (
-          <div key={i} className="overflow-x-auto">
-            <table className="min-w-full border-collapse text-sm tabular-nums">
+          <div key={i} className="-mx-1 overflow-x-auto px-1 pb-1">
+            <table className="min-w-full border-collapse text-[0.8125rem] leading-snug font-normal tabular-nums sm:text-sm">
               <tbody>
                 {b.rows.map((row, r) => (
-                  <tr key={r} className={r === 0 ? 'font-semibold' : ''}>
+                  <tr key={r} className={r === 0 ? 'bg-slate-50 font-semibold dark:bg-slate-800/60' : ''}>
                     {row.map((c, j) => (
-                      <td key={j} className="border border-slate-200 px-2 py-1 dark:border-slate-700">
+                      <td key={j} className="border border-slate-200 px-2 py-1.5 whitespace-nowrap dark:border-slate-700">
                         {c}
                       </td>
                     ))}

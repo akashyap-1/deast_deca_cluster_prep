@@ -9,21 +9,21 @@ type Mode = 'signIn' | 'signUp' | 'forgot' | 'checkEmail' | 'resetSent';
 function Shell({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-dvh flex-col bg-slate-100 lg:flex-row dark:bg-slate-950">
-      <aside className="relative flex flex-col justify-between overflow-hidden bg-brand-900 px-6 py-8 text-white lg:w-[42%] lg:px-14 lg:py-12 dark:bg-brand-950">
+      <aside className="relative flex flex-col justify-between overflow-hidden bg-brand-900 px-5 pt-[calc(1.5rem+env(safe-area-inset-top))] pb-6 text-white lg:w-[42%] lg:px-14 lg:py-12 dark:bg-brand-950">
         <div className="flex items-center gap-3 lg:block">
-          <LogoMark className="h-14 w-auto lg:h-auto lg:w-56" />
+          <LogoMark className="h-14 w-auto shrink-0 lg:h-auto lg:w-56" />
           <div className="lg:mt-10">
-            <h1 className="text-2xl font-bold tracking-tight lg:text-4xl">East DECA Prep</h1>
-            <p className="mt-1 max-w-sm text-sm text-brand-100 lg:mt-3 lg:text-base">
+            <h1 className="text-xl font-bold tracking-tight lg:text-4xl">East DECA Prep</h1>
+            <p className="mt-0.5 max-w-sm text-sm leading-snug text-brand-100 lg:mt-3 lg:text-base lg:leading-normal">
               Cluster exam practice built from real past DECA exams, for Downingtown East DECA members.
             </p>
           </div>
         </div>
         <Credit className="mt-8 hidden text-sm leading-relaxed text-brand-200 lg:block" />
       </aside>
-      <main className="flex flex-1 flex-col items-center justify-center px-4 py-10 sm:px-8">
+      <main className="flex flex-1 flex-col items-center px-5 pt-8 pb-[calc(2rem+env(safe-area-inset-bottom))] sm:px-8 sm:py-10 lg:justify-center">
         <div className="w-full max-w-sm">{children}</div>
-        <Credit className="mt-10 text-center text-xs leading-relaxed text-slate-500 lg:hidden dark:text-slate-400" />
+        <Credit className="mt-auto pt-10 text-center text-xs leading-relaxed text-slate-500 lg:hidden dark:text-slate-400" />
       </main>
     </div>
   );

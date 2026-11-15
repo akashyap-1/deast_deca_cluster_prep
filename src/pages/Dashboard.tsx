@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { areas, visibleQuestions } from '../data/bank';
 import { Button, Card, Stat, cx, pct, LINK } from '../components/ui';
 import { navigate } from '../lib/router';
@@ -245,8 +245,17 @@ function WeakestPis({ piStats, piInfo }: { piStats: Map<string, GroupStat>; piIn
 function MockTrend({ mocks }: { mocks: MockResult[] }) {
   const [hover, setHover] = useState<number | null>(null);
   const [showTable, setShowTable] = useState(false);
-  const W = 640;
-  const H = 220;
+  // Draw at the real width so axis labels stay readable on phones instead of shrinking with the SVG.
+  const box = useRef<HTMLDivElement>(null);
+  const [W, setW] = useState(640);
+  useEffect(() => {
+    const el = box.current;
+    if (!el) return;
+    const ro = new ResizeObserver(([e]) => setW(Math.max(280, Math.round(e.contentRect.width))));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [showTable, mocks.length]);
+  const H = W < 480 ? 190 : 220;
   const P = { l: 36, r: 16, t: 14, b: 26 };
   const pts = mocks.map((m, i) => ({
     m,
@@ -284,18 +293,18 @@ function MockTrend({ mocks }: { mocks: MockResult[] }) {
           </tbody>
         </table>
       ) : (
-        <div className="relative mt-3">
+        <div ref={box} className="relative mt-3">
           <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label="Mock exam score trend" onMouseLeave={() => setHover(null)}>
             {[0, 0.25, 0.5, 0.75, 1].map((g) => (
               <g key={g}>
                 <line x1={P.l} x2={W - P.r} y1={y(g)} y2={y(g)} className="stroke-slate-200 dark:stroke-slate-800" strokeWidth="1" />
-                <text x={P.l - 6} y={y(g) + 3} textAnchor="end" className="fill-slate-400 text-[10px]">
+                <text x={P.l - 6} y={y(g) + 3} textAnchor="end" className="fill-slate-500 text-[11px] dark:fill-slate-400">
                   {g * 100}%
                 </text>
               </g>
             ))}
             <line x1={P.l} x2={W - P.r} y1={y(TARGET)} y2={y(TARGET)} className="stroke-slate-400" strokeDasharray="4 4" strokeWidth="1" />
-            <text x={P.l + 4} y={y(TARGET) - 4} className="fill-slate-500 text-[10px]">
+            <text x={P.l + 4} y={y(TARGET) - 4} className="fill-slate-500 text-[11px] dark:fill-slate-400">
               70% target
             </text>
             {pts.length > 1 && (
@@ -317,11 +326,11 @@ function MockTrend({ mocks }: { mocks: MockResult[] }) {
             ))}
             {pts.length > 0 && (
               <>
-                <text x={pts[0].x} y={H - 8} textAnchor={pts.length > 1 ? 'start' : 'middle'} className="fill-slate-400 text-[10px]">
+                <text x={pts[0].x} y={H - 8} textAnchor={pts.length > 1 ? 'start' : 'middle'} className="fill-slate-500 text-[11px] dark:fill-slate-400">
                   {new Date(pts[0].m.finishedAt).toLocaleDateString()}
                 </text>
                 {pts.length > 1 && (
-                  <text x={pts[pts.length - 1].x} y={H - 8} textAnchor="end" className="fill-slate-400 text-[10px]">
+                  <text x={pts[pts.length - 1].x} y={H - 8} textAnchor="end" className="fill-slate-500 text-[11px] dark:fill-slate-400">
                     {new Date(pts[pts.length - 1].m.finishedAt).toLocaleDateString()}
                   </text>
                 )}
