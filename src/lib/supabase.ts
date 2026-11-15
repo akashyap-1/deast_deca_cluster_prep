@@ -11,7 +11,7 @@ export const supabase = createClient(url, key, {
 
 const ALLOWED = /^[^@\s]+@(student\.)?dasd\.org$/i;
 
-/** Same rule the database enforces: only district student and staff addresses. */
+/** District student and staff addresses. The database also accepts a private allowlist (supabase/allowlist.sql). */
 export function isAllowedEmail(email: string): boolean {
   return ALLOWED.test(email.trim());
 }

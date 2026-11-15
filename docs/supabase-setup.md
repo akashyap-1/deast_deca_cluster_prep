@@ -44,3 +44,12 @@ Optional: under **Authentication → Emails → Templates**, edit "Confirm signu
 
 In the GitHub repo: **Settings → Pages → Source: GitHub Actions**. Each push to `main` then builds and
 deploys the site to `https://akashyap-1.github.io/deast_deca_cluster_prep/`.
+
+## Optional: allow a non-district address (e.g. an admin's Gmail)
+
+1. SQL Editor → New query → paste [`supabase/allowlist.sql`](../supabase/allowlist.sql) → **Run**.
+2. In a new query, add the address (lowercase) and run it:
+   `insert into public.allowed_emails (email, note) values ('you@gmail.com', 'admin') on conflict do nothing;`
+3. Sign up in the app with that address as normal.
+
+The list lives only in the database. The site code never contains it, and signed-in students can't read it.
