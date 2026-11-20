@@ -6,6 +6,8 @@ import { MockPage } from './pages/Mock';
 import { DashboardPage } from './pages/Dashboard';
 import { SettingsPage } from './pages/Settings';
 import { ReviewPage } from './pages/Review';
+import { AdminPage } from './pages/Admin';
+import { useIsAdmin } from './lib/admin';
 import { LoginPage, NewPasswordPage } from './pages/Login';
 import { CLUSTERS, hasBank } from './data/clusters';
 import { useAuth } from './lib/auth';
@@ -25,6 +27,8 @@ const NAV = [
     icon: 'M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z',
   },
 ];
+
+const ADMIN_NAV = { path: '/admin', label: 'Admin', short: 'Admin', icon: 'M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3zM9 12l2 2 4-4' };
 
 function Icon({ d, className = 'h-5 w-5' }: { d: string; className?: string }) {
   return (
@@ -102,9 +106,11 @@ function SaveStatus() {
   );
 }
 
-function Shell({ cluster }: { cluster: string }) {
+function Shell({ cluster, userId }: { cluster: string; userId: string }) {
   useTheme();
   const route = useRoute();
+  const isAdmin = useIsAdmin(userId);
+  const nav = isAdmin === true ? [...NAV, ADMIN_NAV] : NAV;
   let page: React.ReactNode;
   switch (route.path) {
     case '/settings':
@@ -119,10 +125,13 @@ function Shell({ cluster }: { cluster: string }) {
     case '/mock':
       page = <MockPage params={route.params} />;
       break;
+    case '/admin':
+      page = <AdminPage params={route.params} isAdmin={isAdmin} />;
+      break;
     default:
       page = <PracticePage key={route.params.toString()} params={route.params} />;
   }
-  const active = (p: string) => route.path === p || (p === '/practice' && !NAV.some((n) => n.path === route.path));
+  const active = (p: string) => route.path === p || (p === '/practice' && !nav.some((n) => n.path === route.path));
 
   return (
     <div className="min-h-dvh lg:pl-64">
@@ -133,7 +142,7 @@ function Shell({ cluster }: { cluster: string }) {
         </button>
         <ClusterSelect value={cluster} className="mt-6" />
         <nav className="mt-5 flex flex-col gap-0.5" aria-label="Main">
-          {NAV.map((n) => (
+          {nav.map((n) => (
             <a
               key={n.path}
               href={`#${n.path}`}
@@ -173,7 +182,7 @@ function Shell({ cluster }: { cluster: string }) {
         className="mobile-chrome fixed inset-x-0 bottom-0 z-30 flex border-t border-white/10 bg-brand-900 pb-[env(safe-area-inset-bottom)] lg:hidden dark:bg-brand-950"
         aria-label="Main"
       >
-        {NAV.map((n) => (
+        {nav.map((n) => (
           <a
             key={n.path}
             href={`#${n.path}`}
@@ -207,7 +216,7 @@ function SignedIn({ userId, email }: { userId: string; email: string }) {
       </div>
     );
   if (session.status !== 'ready') return <Splash label={session.status === 'loading' && session.cluster ? 'Loading questions…' : 'Loading your progress…'} />;
-  return <Shell cluster={session.cluster} />;
+  return <Shell cluster={session.cluster} userId={userId} />;
 }
 
 export default function App() {

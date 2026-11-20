@@ -53,3 +53,23 @@ deploys the site to `https://akashyap-1.github.io/deast_deca_cluster_prep/`.
 3. Sign up in the app with that address as normal.
 
 The list lives only in the database. The site code never contains it, and signed-in students can't read it.
+
+## Optional: block specific addresses
+
+1. SQL Editor → New query → paste [`supabase/blacklist.sql`](../supabase/blacklist.sql) → **Run**.
+2. To block more later, add rows and ban any existing account:
+   `insert into public.email_blacklist (email) values ('someone@student.dasd.org') on conflict do nothing;`
+   `update auth.users set banned_until = 'infinity' where lower(email) = 'someone@student.dasd.org';`
+
+Blocked addresses can't sign up, can't sign in (if banned), and can't read or write any data.
+
+## Admin stats page
+
+1. Run `supabase/blacklist.sql` first if you haven't (admin.sql relies on the allowlist check it sets up).
+2. SQL Editor → New query → paste [`supabase/admin.sql`](../supabase/admin.sql) → **Run**. It makes
+   `advikkashyap1@gmail.com` an admin and adds it to the allowlist.
+3. Sign up / sign in in the app with that address. An **Admin** tab appears (`#/admin`) with every account's
+   accuracy, answers, study time, active days, mock scores and more; click a user for their full history.
+
+To add another admin: `insert into public.admin_emails (email) values ('someone@example.com') on conflict do nothing;`
+(a non-district address also needs a row in `allowed_emails`). The stats functions refuse anyone not on this list.
